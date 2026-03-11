@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Starloom — Crafting wonder, thread by thread.</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;900&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+
+  <style>
+    .member-avatar { overflow: hidden; padding: 0; font-size: 0; }
+    .member-avatar img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; display: block; }
+  </style>
+</head>
+<body>
+
+  <!-- Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- NAV -->
+  <nav>
+    <a href="index.html" class="nav-logo">
+      <img src="assets/images/studio/LogoTransparent.png" alt="Starloom Logo">
+      <span>Starloom</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#games">Games</a></li>
+      <li><a href="#studio">Studio</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="star-field" id="starField"></div>
+    <div class="hero-emblem">
+      <img src="assets/images/studio/LogoTransparent.png" alt="Starloom">
+      <div class="hero-emblem-ring"></div>
+    </div>
+    <p class="hero-eyebrow">Independent Game Studio</p>
+    <h1 class="hero-title">Star<span>loom</span></h1>
+    <p class="hero-tagline">Crafting wonder, thread by thread.</p>
+    <div class="hero-cta">
+      <a href="#games" class="btn">Explore Games</a>
+      <a href="#studio" class="btn btn-ghost">Our Studio</a>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- GAMES -->
+  <section id="games">
+    <div class="games-header reveal">
+      <p class="section-label">Our Games</p>
+      <h2 class="section-title">Worlds We've <span>Woven</span></h2>
+      <div class="divider"></div>
+    </div>
+    <div class="games-grid reveal">
+
+      <!-- Martial Ascension -->
+      <div class="game-card card-ma">
+        <div class="game-card-bg"></div>
+        <img src="assets/images/studio/MartialAscension.png" class="game-card-art game-card-art-ma" alt="Martial Ascension">
+        <div class="particles" id="maParticles"></div>
+        <div class="game-card-overlay"></div>
+        <div class="game-card-content">
+          <span class="game-tag">Fighting</span>
+          <h3 class="game-card-title">Martial<br>Ascension</h3>
+          <p class="game-card-desc">"In a world where strength is supreme...Temper your Qi. Master the Dao of Combat. Surpass the limits of mortals...and ascend to the Martial Heavens."</p>
+          <a href="games/martialascension.html" class="game-card-link">Discover</a>
+        </div>
+      </div>
+
+      <!-- World REBOOT -->
+      <div class="game-card card-wr">
+        <div class="game-card-bg"></div>
+        <div class="particles" id="wrParticles"></div>
+        <div class="game-card-overlay"></div>
+        <div class="game-card-content">
+          <span class="game-tag">Exploration · Puzzle</span>
+          <h3 class="game-card-title">World;<br>REBOOT!!</h3>
+          <p class="game-card-desc">Explore the ruins of a forgotten world. Solve the puzzles of the past. Uncover the truth behind the Collapse.</p>
+          <a href="games/worldreboot.html" class="game-card-link">Discover</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- STUDIO -->
+  <section id="studio">
+    <div class="studio-inner">
+      <div class="studio-text reveal">
+        <p class="section-label">About the Studio</p>
+        <h2 class="section-title">Small team.<br><span>Big worlds.</span></h2>
+        <div class="divider"></div>
+        <p>Starloom is an independent game studio built on the belief that the most extraordinary experiences come from the most intentional craftsmanship. We weave together art, narrative, and mechanics into worlds that linger long after you put the controller down.</p>
+        <p>Every game we make carries a thread of wonder — something that surprises you, challenges you, or simply makes you feel something you didn't expect.</p>
+        <div class="studio-stats">
+          <div class="stat"><div class="stat-num">2</div><div class="stat-label">Games Released</div></div>
+          <div class="stat"><div class="stat-num">4</div><div class="stat-label">Team Members</div></div>
+          <div class="stat"><div class="stat-num">∞</div><div class="stat-label">Stories to Tell</div></div>
+          <div class="stat"><div class="stat-num">1</div><div class="stat-label">Studio, Indie</div></div>
+        </div>
+      </div>
+      <div class="studio-emblem reveal">
+        <div class="emblem-orbit-2"></div>
+        <div class="emblem-orbit"></div>
+        <img src="assets/images/studio/LogoTransparent.png" alt="Starloom">
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section id="team">
+    <div class="team-header reveal">
+      <p class="section-label">The People</p>
+      <h2 class="section-title">Meet the <span>Weavers</span></h2>
+      <div class="divider"></div>
+    </div>
+    <div class="team-grid reveal">
+
+      <div class="member-card">
+        <div class="member-avatar">
+          <img src="assets/images/studio/GULFERIC.jpeg" alt="Gulferic">
+        </div>
+        <div class="member-name">Gulferic</div>
+        <div class="member-role">Game Director</div>
+      </div>
+
+      <div class="member-card">
+        <div class="member-avatar">
+          <img src="assets/images/studio/LEE.png" alt="Lee">
+        </div>
+        <div class="member-name">Lee</div>
+        <div class="member-role">Lead Developer</div>
+      </div>
+
+      <div class="member-card">
+        <div class="member-avatar">
+          <img src="assets/images/studio/MALONES.jpg" alt="Malones">
+        </div>
+        <div class="member-name">Malones</div>
+        <div class="member-role">Art Director</div>
+      </div>
+
+      <div class="member-card">
+        <div class="member-avatar">
+          <img src="assets/images/studio/TABAGO.jpeg" alt="Tabago">
+        </div>
+        <div class="member-name">Tabago</div>
+        <div class="member-role">Sound & Narrative</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact-inner reveal">
+      <p class="section-label">Get in Touch</p>
+      <h2 class="section-title">Let's <span>Connect</span></h2>
+      <div class="divider"></div>
+      <p>Whether you're a player with a question, a collaborator with an idea, or a publisher with an offer — we'd love to hear from you.</p>
+      <div class="contact-links">
+        <a href="mailto:starloomgamingstudio@gmail.com" class="btn">starloomgamingstudio@gmail.com</a>
+        <a href="https://www.facebook.com/profile.php?id=61579910391001"
+           target="_blank" rel="noopener noreferrer"
+           class="btn btn-ghost">Follow us on Facebook</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">
+      <img src="assets/images/studio/LogoTransparent.png" alt="Starloom">
+      <span>Starloom</span>
+    </div>
+    <p class="footer-copy">© 2025 Starloom. Crafting wonder, thread by thread.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
