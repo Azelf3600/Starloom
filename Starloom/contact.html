@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact — Starloom</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;900&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Shared Styles -->
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+
+  <style>
+    /* ── PAGE HERO ── */
+    .page-hero {
+      min-height: 50vh;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      text-align: center;
+      padding: 10rem 2rem 5rem;
+      position: relative; overflow: hidden;
+    }
+    .page-hero::before {
+      content: ''; position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse 70% 50% at 50% 0%, rgba(160,210,240,0.07) 0%, transparent 65%);
+    }
+    .page-hero-label {
+      font-size: 0.68rem; letter-spacing: 0.5em; text-transform: uppercase;
+      color: var(--ice-dim); margin-bottom: 1rem;
+      animation: fadeUp 0.8s 0.1s both;
+    }
+    .page-hero-title {
+      font-family: var(--font-display);
+      font-size: clamp(2.8rem, 6vw, 5.5rem);
+      font-weight: 900; color: #fff; line-height: 1.05;
+      text-shadow: 0 0 60px rgba(160,210,240,0.2);
+      animation: fadeUp 0.8s 0.25s both;
+    }
+    .page-hero-title span { color: var(--ice); }
+    .page-hero-sub {
+      margin-top: 1.5rem; font-size: 1rem; letter-spacing: 0.12em;
+      color: var(--muted); max-width: 480px; line-height: 1.8;
+      animation: fadeUp 0.8s 0.4s both;
+    }
+
+    /* ── CONTACT MAIN ── */
+    #contact-main { background: var(--bg2); }
+    .contact-layout {
+      max-width: 1100px; margin: 0 auto;
+      display: grid; grid-template-columns: 1fr 1.4fr;
+      gap: 6rem; align-items: start;
+    }
+
+    /* Left — info */
+    .contact-info-block { margin-bottom: 3rem; }
+    .contact-info-block:last-child { margin-bottom: 0; }
+    .contact-info-label {
+      font-size: 0.65rem; letter-spacing: 0.4em; text-transform: uppercase;
+      color: var(--ice-dim); margin-bottom: 0.8rem;
+    }
+    .contact-info-value {
+      font-family: var(--font-display);
+      font-size: 0.95rem; color: #fff; letter-spacing: 0.05em;
+      text-decoration: none; display: block;
+      transition: color 0.3s;
+    }
+    .contact-info-value:hover { color: var(--ice); }
+    .contact-info-note {
+      font-size: 0.8rem; color: var(--muted);
+      line-height: 1.7; margin-top: 0.5rem;
+    }
+
+    .social-btn {
+      display: inline-flex; align-items: center; gap: 0.8rem;
+      margin-top: 0.8rem;
+      font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase;
+      text-decoration: none; padding: 0.8rem 1.6rem;
+      border: 1px solid var(--border); color: var(--muted);
+      background: transparent; cursor: none;
+      transition: color 0.3s, border-color 0.3s;
+      position: relative; overflow: hidden;
+    }
+    .social-btn::before {
+      content: ''; position: absolute; inset: 0;
+      background: rgba(160,210,240,0.06);
+      transform: translateX(-101%); transition: transform 0.3s;
+    }
+    .social-btn:hover::before { transform: translateX(0); }
+    .social-btn:hover { color: var(--ice); border-color: rgba(160,210,240,0.3); }
+    .social-btn-icon { font-size: 1rem; }
+
+    .press-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      padding: 1.5rem;
+      margin-top: 0.8rem;
+    }
+    .press-box p {
+      font-size: 0.82rem; line-height: 1.75; color: rgba(200,215,230,0.6);
+    }
+    .press-box strong { color: var(--ice); font-weight: 500; }
+
+    /* Right — form */
+    .contact-form-wrap .section-title { margin-bottom: 0.5rem; }
+    .contact-form-wrap .divider { margin: 1.2rem 0 2.5rem; }
+
+    .form-group { margin-bottom: 1.5rem; }
+    .form-label {
+      display: block;
+      font-size: 0.65rem; letter-spacing: 0.35em; text-transform: uppercase;
+      color: var(--ice-dim); margin-bottom: 0.6rem;
+    }
+    .form-input, .form-textarea {
+      width: 100%;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--text);
+      font-family: var(--font-body);
+      font-size: 0.88rem; font-weight: 300;
+      padding: 0.9rem 1.2rem;
+      outline: none;
+      transition: border-color 0.3s, box-shadow 0.3s;
+      resize: none;
+      box-sizing: border-box;
+    }
+    .form-input:focus, .form-textarea:focus {
+      border-color: rgba(160,210,240,0.4);
+      box-shadow: 0 0 0 3px rgba(160,210,240,0.05);
+    }
+    .form-input::placeholder, .form-textarea::placeholder {
+      color: var(--muted); opacity: 0.6;
+    }
+    .form-textarea { min-height: 140px; }
+
+    .form-row {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem;
+    }
+
+    .form-submit {
+      width: 100%;
+      font-family: var(--font-body);
+      font-size: 0.75rem; letter-spacing: 0.25em; text-transform: uppercase;
+      padding: 1rem 2rem;
+      border: 1px solid var(--ice); color: var(--ice);
+      background: transparent; cursor: none;
+      transition: color 0.3s;
+      position: relative; overflow: hidden;
+      margin-top: 0.5rem;
+    }
+    .form-submit::before {
+      content: ''; position: absolute; inset: 0;
+      background: var(--ice);
+      transform: translateX(-101%); transition: transform 0.3s;
+    }
+    .form-submit:hover::before { transform: translateX(0); }
+    .form-submit:hover { color: var(--bg); }
+
+    .form-note {
+      font-size: 0.72rem; color: var(--muted);
+      margin-top: 1rem; text-align: center; line-height: 1.6;
+    }
+
+    /* ── FAQ ── */
+    #faq { background: var(--bg); }
+    .faq-inner { max-width: 800px; margin: 0 auto; }
+    .faq-header { margin-bottom: 4rem; }
+    .faq-header .divider { margin: 1.5rem 0; }
+
+    .faq-list { display: flex; flex-direction: column; gap: 2px; }
+    .faq-item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      overflow: hidden;
+    }
+    .faq-question {
+      width: 100%; text-align: left; background: none; border: none;
+      padding: 1.6rem 2rem;
+      font-family: var(--font-display); font-size: 0.88rem;
+      letter-spacing: 0.06em; color: #fff; cursor: none;
+      display: flex; justify-content: space-between; align-items: center;
+      transition: color 0.3s;
+    }
+    .faq-question:hover { color: var(--ice); }
+    .faq-icon {
+      font-size: 1.2rem; color: var(--ice-dim);
+      transition: transform 0.3s;
+      flex-shrink: 0; margin-left: 1rem;
+    }
+    .faq-item.open .faq-icon { transform: rotate(45deg); }
+    .faq-answer {
+      max-height: 0; overflow: hidden;
+      transition: max-height 0.4s ease, padding 0.3s;
+      padding: 0 2rem;
+    }
+    .faq-item.open .faq-answer {
+      max-height: 200px;
+      padding: 0 2rem 1.6rem;
+    }
+    .faq-answer p {
+      font-size: 0.88rem; line-height: 1.85;
+      color: rgba(200,215,230,0.65);
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      .contact-layout { grid-template-columns: 1fr; gap: 4rem; }
+      .form-row { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- NAV -->
+  <nav>
+    <a href="index.html" class="nav-logo">
+      <img src="assets/images/studio/LogoTransparent.png" alt="Starloom Logo">
+      <span>Starloom</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html#games">Games</a></li>
+      <li><a href="index.html#studio">Studio</a></li>
+      <li><a href="index.html#team">Team</a></li>
+      <li><a href="contact.html" style="color: var(--ice);">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <p class="page-hero-label">Get in Touch</p>
+    <h1 class="page-hero-title">Let's <span>Connect</span></h1>
+    <p class="page-hero-sub">Players, collaborators, press — we read everything. Don't be a stranger.</p>
+  </div>
+
+  <!-- CONTACT MAIN -->
+  <section id="contact-main">
+    <div class="contact-layout">
+
+      <!-- Left: Info -->
+      <div class="contact-left reveal">
+
+        <div class="contact-info-block">
+          <div class="contact-info-label">Email Us</div>
+          <a href="mailto:starloomgamingstudio@gmail.com" class="contact-info-value">
+            starloomgamingstudio@gmail.com
+          </a>
+          <p class="contact-info-note">We try to reply within 2–3 days. For urgent press inquiries, mention it in the subject line.</p>
+        </div>
+
+        <div class="contact-info-block">
+          <div class="contact-info-label">Follow Us</div>
+          <a href="https://www.facebook.com/profile.php?id=61579910391001"
+             target="_blank" rel="noopener noreferrer"
+             class="social-btn">
+            <span class="social-btn-icon">f</span>
+            Facebook Page
+          </a>
+          <p class="contact-info-note" style="margin-top: 0.8rem;">Updates, announcements, and behind-the-scenes from the studio.</p>
+        </div>
+
+        <div class="contact-info-block">
+          <div class="contact-info-label">Press & Media</div>
+          <div class="press-box">
+            <p>Writing about us? We're happy to provide <strong>screenshots, logos, game descriptions, and team bios</strong>. Reach out via email with your outlet name and we'll send over a press kit.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right: Form -->
+      <div class="contact-form-wrap reveal">
+        <p class="section-label">Send a Message</p>
+        <h2 class="section-title">Say <span>Hello</span></h2>
+        <div class="divider"></div>
+
+        <form id="contactForm" onsubmit="return false;">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="name">Your Name</label>
+              <input type="text" id="name" class="form-input" placeholder="e.g. Alex Cruz" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email">Your Email</label>
+              <input type="email" id="email" class="form-input" placeholder="you@example.com" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="subject">Subject</label>
+            <input type="text" id="subject" class="form-input" placeholder="What's this about?">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="message">Message</label>
+            <textarea id="message" class="form-textarea" placeholder="Tell us what's on your mind..." required></textarea>
+          </div>
+
+          <button type="button" class="form-submit" id="sendBtn">Send Message</button>
+          <p class="form-note">This will open your email client with your message ready to send.</p>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="faq-inner">
+      <div class="faq-header reveal">
+        <p class="section-label">Quick Answers</p>
+        <h2 class="section-title">Common <span>Questions</span></h2>
+        <div class="divider"></div>
+      </div>
+
+      <div class="faq-list reveal">
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Are your games free to play?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Details on pricing and availability are per-game. Check each game's page for the latest info on platform and pricing. We believe great games are worth paying for — but we also believe in being fair.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            What platforms are your games on?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Platform availability varies by title. Visit the individual game pages for the most up-to-date platform information. We're always exploring new platforms as our games grow.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            How do I stay updated on new releases?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Follow us on Facebook for the latest news, development updates, and announcements. We post regularly about what's happening inside the studio and what's coming next.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Can I collaborate with or join Starloom?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>We're a small team but we're always open to interesting conversations. If you have a skill, an idea, or just a genuine love for what we're building — send us a message. We read everything.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            I found a bug. How do I report it?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Email us at starloomgamingstudio@gmail.com with the subject "Bug Report" and include the game name, what happened, and what device you're on. We take every report seriously and appreciate the help.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">
+      <img src="assets/images/studio/LogoTransparent.png" alt="Starloom">
+      <span>Starloom</span>
+    </div>
+    <p class="footer-copy">© 2025 Starloom. Crafting wonder, thread by thread.</p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    // FAQ accordion
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.parentElement;
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+        if (!isOpen) item.classList.add('open');
+      });
+    });
+
+    // Contact form → mailto (fixed: using button type=button with explicit handler)
+    document.getElementById('sendBtn').addEventListener('click', function () {
+      const name    = document.getElementById('name').value.trim();
+      const email   = document.getElementById('email').value.trim();
+      const subject = document.getElementById('subject').value.trim() || 'Message from Starloom Website';
+      const message = document.getElementById('message').value.trim();
+
+      if (!name || !email || !message) {
+        alert('Please fill in your name, email, and message before sending.');
+        return;
+      }
+
+      const body = `Name: ${name}\nEmail: ${email}\n\n${message}`;
+      window.location.href = `mailto:starloomgamingstudio@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    });
+  </script>
+</body>
+</html>

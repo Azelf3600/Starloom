@@ -98,3 +98,69 @@ const revealObserver = new IntersectionObserver(entries => {
 }, { threshold: 0.12 });
 
 document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+// ── WORLD REBOOT — DATA FRAGMENTS ──
+const fragmentContainer = document.getElementById('dataFragments');
+if (fragmentContainer) {
+  const fragments = ['01001','11010','ERR_','0xFF','NULL','???','1/0','VOID','0b1101','NaN','404','LOST','>_','EDEN','ARC','//','REBOOT'];
+  fragments.forEach(text => {
+    const el = document.createElement('div');
+    el.className = 'data-fragment';
+    el.textContent = text;
+    el.style.cssText = [
+      `left:${Math.random()*90+5}%`,
+      `top:${Math.random()*80+10}%`,
+      `--fd:${(Math.random()*6+4).toFixed(1)}s`,
+      `--fo:${(Math.random()*0.3+0.1).toFixed(2)}`,
+      `--fx:${(Math.random()*40-20).toFixed(0)}px`,
+      `--fy:${(Math.random()*40-20).toFixed(0)}px`,
+      `animation-delay:${(Math.random()*5).toFixed(1)}s`
+    ].join(';');
+    fragmentContainer.appendChild(el);
+  });
+}
+ 
+// ── WORLD REBOOT — STAGE ACCORDION ──
+function toggleStage(btn) {
+  const block = btn.closest('.stage-block');
+  const isActive = block.classList.contains('active');
+  document.querySelectorAll('.stage-block').forEach(b => b.classList.remove('active'));
+  if (!isActive) block.classList.add('active');
+}
+
+// ── MARTIAL ASCENSION ──
+    // ── Falling Embers ──
+    const emberContainer = document.getElementById('embers');
+    for (let i = 0; i < 22; i++) {
+      const e = document.createElement('div');
+      e.className = 'ember';
+      e.style.cssText = [
+        `left:${Math.random() * 100}%`,
+        `top:${Math.random() * 40}%`,
+        `--ed:${(Math.random() * 6 + 4).toFixed(1)}s`,
+        `--ex:${(Math.random() * 80 - 40).toFixed(0)}px`,
+        `animation-delay:${(Math.random() * 8).toFixed(1)}s`
+      ].join(';');
+      emberContainer.appendChild(e);
+    }
+
+    // ── Character Tabs ──
+    document.querySelectorAll('.char-tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        const char = tab.dataset.char;
+        document.querySelectorAll('.char-tab').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.char-panel').forEach(p => p.classList.remove('active'));
+        tab.classList.add('active');
+        document.getElementById('panel-' + char).classList.add('active');
+      });
+    });
+
+    // ── Move Accordions ──
+    document.querySelectorAll('.move-group-header').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const group = btn.parentElement;
+        const isOpen = group.classList.contains('open');
+        btn.closest('.moves-accordion').querySelectorAll('.move-group').forEach(g => g.classList.remove('open'));
+        if (!isOpen) group.classList.add('open');
+      });
+    });

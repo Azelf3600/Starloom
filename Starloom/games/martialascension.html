@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Martial Ascension — Starloom</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;900&family=Raleway:wght@300;400;500&family=Noto+Serif+SC:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+  <link rel="stylesheet" href="../assets/css/martialascension.css">
+
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- NAV -->
+  <nav>
+    <a href="../index.html" class="nav-logo">
+      <img src="../assets/images/studio/LogoTransparent.png" alt="Starloom Logo">
+      <span>Starloom</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../index.html#games" style="color: var(--ma-red-bright);">Games</a></li>
+      <li><a href="../index.html#studio">Studio</a></li>
+      <li><a href="../index.html#team">Team</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="ma-hero">
+    <div class="hero-seal">武</div>
+    <div id="embers"></div>
+    <a href="../index.html#games" class="back-link">Back to Games</a>
+    <p class="ma-eyebrow">Starloom · Cultivation Fighting Game</p>
+    <h1 class="ma-title">
+      <span class="kanji">武道升天</span>
+      Martial<br><span class="accent">Ascension</span>
+    </h1>
+    <p class="ma-tagline">
+      <strong>Temper your Qi. Master the Dao of Combat.</strong><br>
+      Surpass the limits of mortals — and ascend to the Martial Heavens.
+    </p>
+    <div class="ma-hero-cta">
+      <a href="#ma-characters" class="btn-ma">Meet the Warriors</a>
+      <a href="#ma-modes" class="btn btn-ghost">Game Modes</a>
+    </div>
+  </section>
+
+  <!-- OVERVIEW -->
+  <section id="ma-overview">
+    <div class="ma-overview-inner">
+      <div class="ma-overview-text reveal">
+        <p class="section-label-red">About the Game</p>
+        <h2 class="section-title">Where <span class="accent-red">Strength</span> Is Supreme</h2>
+        <div class="divider-red"></div>
+        <p>Martial Ascension is a cultivation fighting game set in the ancient world of Murim — a realm where warriors forge their Qi through grueling discipline, deadly combat, and unwavering will. In this world, the strong ascend. The weak are forgotten.</p>
+        <p>Choose your path. Master your martial arts. Battle rivals across three modes that test both your reflexes and your mastery of each fighter's unique cultivation style — from the ethereal sword techniques of the White Wind Dao to the suffocating poison arts of the Ten Thousand Sovereigns.</p>
+        <div class="ma-details-grid">
+          <div class="ma-detail"><div class="ma-detail-label">Genre</div><div class="ma-detail-value">Fighting · Cultivation</div></div>
+          <div class="ma-detail"><div class="ma-detail-label">Studio</div><div class="ma-detail-value">Starloom</div></div>
+          <div class="ma-detail"><div class="ma-detail-label">Fighters</div><div class="ma-detail-value">4 Characters</div></div>
+          <div class="ma-detail"><div class="ma-detail-label">Modes</div><div class="ma-detail-value">Campaign · PvP · Training</div></div>
+        </div>
+      </div>
+      <div class="ma-art-panel reveal">
+        <div class="ma-art-frame">
+          <div class="ma-art-frame-corner mac-tl"></div>
+          <div class="ma-art-frame-corner mac-tr"></div>
+          <div class="ma-art-frame-corner mac-bl"></div>
+          <div class="ma-art-frame-corner mac-br"></div>
+          <img src="../assets/images/studio/MartialAscension.png" alt="Martial Ascension">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STAGES -->
+  <section id="ma-stages">
+    <div class="ma-stages-header reveal">
+      <p class="section-label-red">Battlegrounds</p>
+      <h2 class="section-title">The <span class="accent-red">Three</span> Arenas</h2>
+      <div class="divider-red-center"></div>
+    </div>
+    <div class="stages-grid reveal">
+      <div class="stage-card stage-sword">
+        <div class="stage-bg"></div>
+        <div class="stage-overlay"></div>
+        <div class="stage-content">
+          <div class="stage-num">Stage I</div>
+          <div class="stage-name">Sword God Palace</div>
+          <p class="stage-desc">The grand martial arena of the strongest sect in the righteous path. Every five years the younger generation gathers here to test their blades and claim glory beneath the eternal gaze of the Sword God's legacy.</p>
+        </div>
+      </div>
+      <div class="stage-card stage-forest">
+        <div class="stage-bg"></div>
+        <div class="stage-overlay"></div>
+        <div class="stage-content">
+          <div class="stage-num">Stage II</div>
+          <div class="stage-name">Black Forest</div>
+          <p class="stage-desc">A decayed wilderness consumed by corrupted Qi. The trees are blackened and dead. No animals remain — only demonic beasts prowl the fog. A place where only the truly strong survive long enough to leave.</p>
+        </div>
+      </div>
+      <div class="stage-card stage-battle">
+        <div class="stage-bg"></div>
+        <div class="stage-overlay"></div>
+        <div class="stage-content">
+          <div class="stage-num">Stage III</div>
+          <div class="stage-name">Immortal Ancient Battlefield</div>
+          <p class="stage-desc">The sacred ruin where the great war between immortals, demons, and beasts was fought and decided. Ancient Qi still bleeds from the earth. The echoes of those who fell here have never truly left.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODES -->
+  <section id="ma-modes">
+    <div class="ma-modes-header reveal">
+      <p class="section-label-red">How You Play</p>
+      <h2 class="section-title">Choose Your <span class="accent-red">Path</span></h2>
+      <div class="divider-red-center"></div>
+    </div>
+    <div class="ma-modes-grid reveal">
+      <div class="mode-card">
+        <span class="mode-glyph">征</span>
+        <div class="mode-tag">Solo</div>
+        <div class="mode-title">Campaign</div>
+        <p class="mode-desc">Follow each warrior's rise through the martial world. Three rivals. Three battles. One story per fighter — culminating in a final confrontation that defines their legacy in the world of Murim.</p>
+      </div>
+      <div class="mode-card">
+        <span class="mode-glyph">戰</span>
+        <div class="mode-tag">PvP</div>
+        <div class="mode-title">Multiplayer</div>
+        <p class="mode-desc">Step into the arena and challenge other cultivators in direct combat. Test your mastery against human opponents, prove your fighting style reigns supreme, and carve your name into the ranked standings.</p>
+      </div>
+      <div class="mode-card">
+        <span class="mode-glyph">練</span>
+        <div class="mode-tag">Practice</div>
+        <div class="mode-title">Training</div>
+        <p class="mode-desc">Hone your techniques before committing to real combat. Drill standard combos, master unique move inputs, and refine the timing of your cultivation arts with no consequences.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHARACTERS -->
+  <section id="ma-characters">
+    <div class="ma-chars-header reveal">
+      <p class="section-label-red">The Fighters</p>
+      <h2 class="section-title">The <span class="accent-red">Four</span> Sovereigns</h2>
+      <div class="divider-red-center"></div>
+      <p style="font-size:0.88rem;color:var(--muted);max-width:500px;margin:0 auto;line-height:1.8;">Four warriors. Four paths of cultivation. Each a legend — and each standing between you and the Martial Heavens.</p>
+    </div>
+
+    <div class="char-tabs reveal">
+      <div class="char-tab tab-ethan active" data-char="ethan">
+        <img src="../assets/images/martialascension/EthanLiThumbnail.png" alt="Ethan Li" class="char-tab-thumb">
+        <span class="char-tab-name">Ethan Li</span>
+        <span class="char-tab-title">White Wind Sword Saint</span>
+      </div>
+      <div class="char-tab tab-lucas" data-char="lucas">
+        <img src="../assets/images/martialascension/LucasTangThumbnail.png" alt="Lucas Tang" class="char-tab-thumb">
+        <span class="char-tab-name">Lucas Tang</span>
+        <span class="char-tab-title">Ten Thousand Poison Sovereign</span>
+      </div>
+      <div class="char-tab tab-aaron" data-char="aaron">
+        <img src="../assets/images/martialascension/AaronShuThumbnail.png" alt="Aaron Shu" class="char-tab-thumb">
+        <span class="char-tab-name">Aaron Shu</span>
+        <span class="char-tab-title">Azure Dragon Fist King</span>
+      </div>
+      <div class="char-tab tab-damon" data-char="damon">
+        <img src="../assets/images/martialascension/DamonCheonThumbnail.png" alt="Damon Cheon" class="char-tab-thumb">
+        <span class="char-tab-name">Damon Cheon</span>
+        <span class="char-tab-title">Crimson Heaven Demon King</span>
+      </div>
+    </div>
+
+    <div class="char-panels">
+
+      <!-- ETHAN LI -->
+      <div class="char-panel panel-ethan active" id="panel-ethan">
+        <div class="char-preview">
+          <div class="char-preview-frame">
+            <div class="char-preview-corner cpc-tl"></div><div class="char-preview-corner cpc-tr"></div>
+            <div class="char-preview-corner cpc-bl"></div><div class="char-preview-corner cpc-br"></div>
+            <img src="../assets/images/martialascension/EthanLiPreview.png" alt="Ethan Li" class="char-preview-img">
+          </div>
+          <div class="char-archetype">⚔ Offensive · Burst · High Mobility</div>
+        </div>
+        <div class="char-info">
+          <span class="char-info-badge">Sword Saint</span>
+          <div class="char-info-name">Ethan Li</div>
+          <div class="char-info-title">White Wind Sword Saint · Sword God Palace</div>
+          <div class="char-info-divider"></div>
+          <p class="char-info-lore">Holy Son of the Sword God Palace — the strongest sect of the righteous path. Ethan grew up under the shadow of a legacy that demanded perfection, and he exceeded it. His blade carries the speed of the northern gale and the precision of a divine verdict. High damage, exceptional mobility, and devastating burst potential make him a force that ends fights before opponents realize they've begun.</p>
+          <div class="char-stats-grid">
+            <div class="char-stat-box"><div class="char-stat-box-label">Speed</div><div class="char-stat-bar-wrap"><div class="char-stat-bar"><div class="char-stat-fill" style="width:92%"></div></div><span class="char-stat-val">92</span></div></div>
+            <div class="char-stat-box"><div class="char-stat-box-label">Power</div><div class="char-stat-bar-wrap"><div class="char-stat-bar"><div class="char-stat-fill" style="width:75%"></div></div><span class="char-stat-val">75</span></div></div>
+            <div class="char-stat-box"><div class="char-stat-box-label">Range</div><div class="char-stat-bar-wrap"><div class="char-stat-bar"><div class="char-stat-fill" style="width:78%"></div></div><span class="char-stat-val">78</span></div></div>
+            <div class="char-stat-box"><div class="char-stat-box-label">Burst</div><div class="char-stat-bar-wrap"><div class="char-stat-bar"><div class="char-stat-fill" style="width:95%"></div></div><span class="char-stat-val">95</span></div></div>
+          </div>
+          <div class="char-moves-title">Move List</div>
+          <div class="moves-accordion">
+            <div class="move-group open">
+              <button class="move-group-header"><span class="move-group-label">Standard Combos</span><span class="move-group-icon">+</span></button>
+              <div class="move-group-body">
+                <div class="move-entry"><div class="move-top"><span class="move-name">Punch Chain</span><span class="move-input">LP, LP, HP</span></div><div class="move-desc">A barrage of punches.</div></div>
+                <div class="move-entry"><div class="move-top"><span class="move-name">Kick Chain</span><span class="move-input">LK, LK, HK</span></div><div class="move-desc">A barrage of sword slashes.</div></div>
+                <div class="move-entry"><div class="move-top"><span class="move-name">Punch Kick Chain I</span><span class="move-input">LP, HP, HK</span></div><div class="move-desc">A barrage of punches and sword slashes.</div></div>
+                <div class="move-entry"><div class="move-top"><span class="move-name">Punch Kick Chain II</span><span class="move-input">LP, LK, HK</span></div><div class="move-desc">A barrage of punches and sword slashes.</div></div>
+                <div class="move-entry"><div class="move-top"><span class="move-name">Launcher</span><span class="move-input">↓→ HP</span></div><div class="move-desc">A sword slash that renders the enemy airborne.</div></div>
+                <div class="move-entry"><div class="move-top"><span class="move-name">Diving Kick</span><span class="move-input">↑→ HK</span></div><div class="move-desc">A jumping downward sword slash.</div></div>
+              </div>
+            </div>
+            <div class="move-group">
+              <button class="move-group-header"><span class="move-group-label">Unique Arts</span><span class="move-group-icon">+</span></button>
+              <div class="move-group-body">
+                <div class="move-entry"><div class="move-top"><span class="move-name">White Wind Sword Qi</span><span class="move-input">←↓→ LP</span></div><div class="move-desc">A crescent torrent of condensed white sword intent cleaves through the air like a winter gale that splits mountains.</div></div>
+                <div class="move-entry"><div class="move-top"><span class="move-name">Unstoppable Sword</span><span class="move-input">←→ LP, HP</span></div><div class="move-desc">Ethan compresses his sword will into a single killing step — a streak of white light that pierces all defenses before the enemy can breathe.</div></div>
+                <div class="move-entry"><div class="move-top"><span class="move-name">Sword Flight</span><span class="move-input">←→ ↑↑</span></div><div class="move-desc">Riding upon his own sword intent, Ethan ascends skyward as though stepping onto invisible blades forged from pure qi.</div></div>
+                <div class="move-entry"><div class="move-top"><span class="move-name">Sky Severing Step</span><span class="move-input">[Sword Flight] →→</span></div><div class="move-desc">During Sword Flight, he folds space with a silent wind-step, reappearing behind his foe like a phantom of the northern gust.</div></div>
+                <div class="move-entry"><div class="move-top"><span class="move-name">Heavenfall Sword God Slash</span><span class="move-input">[Sword Flight] ←← HP, HK</span></div><div class="move-desc">From the heavens he descends, delivering a divine execution strike that splits earth and spirit alike.</div></div>
+                <div class="move-entry"><div class="move-top"><span class="move-name">White God's True Judgement</span><span class="move-input">[Sword Flight · HP≤50%] ←→ LK, HP, HK</span></div><div class="move-desc">When his blood stains the battlefield, a colossal sword of heavenly light manifests above his enemy and descends in absolute verdict.</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- LUCAS TANG -->
+      <div class="char-panel panel-lucas" id="panel-lucas">
+        <div class="char-preview">
+          <div class="char-preview-frame">
+            <div class="char-preview-corner cpc-tl"></div><div class="char-preview-corner cpc-tr"></div>
+            <div class="char-preview-corner cpc-bl"></div><div class="char-preview-corner cpc-br"></div>
+            <img src="../assets/images/martialascension/LucasTangPreview.png" alt="Lucas Tang" class="char-preview-img">
+          </div>
+          <div class="char-archetype">☠ Controller · DoT · AOE · Status Effects</div>
+        </div>
+        <div class="char-info">
+          <span class="char-info-badge">Poison Sovereign</span>
+          <div class="char-info-name">Lucas Tang</div>
+          <div class="char-info-title">Ten Thousand Poison Sovereign · Poison Tang Clan</div>
+          <div class="char-info-divider"></div>
+          <p class="char-info-lore">Born with the Myriad Venom Body — a sacred physique blessed by heaven for the path of poison. Lucas Tang controls the battlefield through stuns, slows, movement locks, and a devastating AOE domain. He doesn't overpower opponents — he suffocates them. His projectiles harass, his poisons decay, and his domain turns the ground itself into a death sentence.</p>
+          <div class="char-stats-grid">
+            <div class="char-stat-box"><div class="char-stat-box-label">DoT</div><div class="char-stat-bar-wrap"><div class="char-stat-bar"><div class="char-stat-fill" style="width:98%"></div></div><span class="char-stat-val">98</span></div></div>
+            <div class="char-stat-box"><div class="char-stat-box-label">Control</div><div class="char-stat-bar-wrap"><div class="char-stat-bar"><div class="char-stat-fill" style="width:92%"></div></div><span class="char-stat-val">92</span></div></div>
+            <div class="char-stat-box"><div class="char-stat-box-label">Power</div><div class="char-stat-bar-wrap"><div class="char-stat-bar"><div class="char-stat-fill" style="width:70%"></div></div><span class="char-stat-val">70</span></div></div>
+            <div class="char-stat-box"><div class="char-stat-box-label">Speed</div><div class="char-stat-bar-wrap"><div class="char-stat-bar"><div class="char-stat-fill" style="width:62%"></div></div><span class="char-stat-val">62</span></div></div>
+          </div>
+          <div class="char-moves-title">Move List</div>
+          <div class="moves-accordion">
+            <div class="move-group open">
+              <button class="move-group-header"><span class="move-group-label">Standard Combos</span><span class="move-group-icon">+</span></button>
+              <div class="move-group-body">
+                <div class="move-entry"><div class="move-top"><span class="move-name">Punch Chain</span><span class="move-input">LP, LP, HP</span></div><div class="move-desc">A barrage of punches.</div></div>
+                <div class="move-entry"><div class="move-top"><span class="move-name">Kick Chain</span><span class="move-input">LK, LK, HK</span></div><div class="move-desc">A barrage of kicks.</div></div>
+                <div class="move-entry"><div class="move-top"><span class="move-name">Punch Kick Chain I</span><span class="move-input">LP, HP, HK</span></div><div class="move-desc">A barrage of punches and kicks.</div></div>
+                <div class="move-entry"><div class="move-top"><span class="move-name">Punch Kick Chain II</span><span class="move-input">LP, LK, HK</span></div><div class="move-desc">A barrage of punches and kicks.</div></div>
+                <div class="move-entry"><div class="move-top"><span class="move-name">Launcher</span><span class="move-input">↓→ HP</span></div><div class="move-desc">A punch that renders the enemy airborne.</div></div>
+                <div class="move-entry"><div class="move-top"><span class="move-name">Diving Kick</span><span class="move-input">↑→ HK</span></div><div class="move-desc">A jumping downward kick.</div></div>
+              </div>
+            </div>
+            <div class="move-group">
+              <button class="move-group-header"><span class="move-group-label">Unique Arts</span><span class="move-group-icon">+</span></button>
+              <div class="move-group-body">
+                <div class="move-entry"><div class="move-top"><span class="move-name">Myriad Venom Body</span><span class="move-input">↓→← HP</span></div><div class="move-desc">Lucas awakens the ancient poison physique, his palms dripping with corrosive qi that erodes flesh and meridians alike.</div></div>
+                <div class="move-entry"><div class="move-top"><span class="move-name">Paralyzing Soul Venom</span><span class="move-input">[Myriad Venom Body] LP, HP, LP</span></div><div class="move-desc">A streak of toxic qi pierces forward, freezing the enemy's meridians and locking their body in helpless stagnation.</div></div>
+                <div class="move-entry"><div class="move-top"><span class="move-name">Crimson Withering Needle</span><span class="move-input">↓→ LP</span></div><div class="move-desc">A blazing scarlet needle of venom embeds itself within the foe, rotting their vitality with relentless decay.</div></div>
+                <div class="move-entry"><div class="move-top"><span class="move-name">Nether Blossom Domain</span><span class="move-input">[Myriad Venom Body] HP, HK, ↓↓</span></div><div class="move-desc">A field of poisonous flowers blooms beneath the battlefield, devouring movement, corroding life, and feeding stolen essence back to Lucas.</div></div>
+                <div class="move-entry"><div class="move-top"><span class="move-name">Venom Shadow Step</span><span class="move-input">[Nether Blossom Domain] →→</span></div><div class="move-desc">Within his blooming poison field, Lucas melts into toxic mist and reforms behind his prey like death itself.</div></div>
+                <div class="move-entry"><div class="move-top"><span class="move-name">Ten Thousand Venoms Flower Rain</span><span class="move-input">[Nether Blossom · HP≤50%] ←→ LP, HP, HK</span></div><div class="move-desc">He sacrifices the entire blossom domain, turning it into a torrential rain of annihilating toxins that erase all beneath it.</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- AARON SHU -->
+      <div class="char-panel panel-aaron" id="panel-aaron">
+        <div class="char-preview">
+          <div class="char-preview-frame">
+            <div class="char-preview-corner cpc-tl"></div><div class="char-preview-corner cpc-tr"></div>
+            <div class="char-preview-corner cpc-bl"></div><div class="char-preview-corner cpc-br"></div>
+            <img src="../assets/images/martialascension/AaronShuPreview.png" alt="Aaron Shu" class="char-preview-img">
+          </div>
+          <div class="char-archetype">🛡 Defensive · Tank · Reflect · Heal</div>
+        </div>
+        <div class="char-info">
+          <span class="char-info-badge">Fist King</span>
+          <div class="char-info-name">Aaron Shu</div>
+          <div class="char-info-title">Azure Dragon Fist King · Raging Tide Gate</div>
+          <div class="char-info-divider"></div>
+          <p class="char-info-lore">Raised on the streets and taken in by the old sect leader of the Raging Tide Gate who saw his extraordinary talent. Aaron is the pinnacle of the unorthodox path — a mountain of a man who ignores status effects, reflects incoming force, heals himself mid-battle, and deals devastating damage despite his lower speed. He doesn't dodge. He endures, and when the time comes, he drowns you.</p>
+          <div class="char-stats-grid">
+            <div class="char-stat-box"><div class="char-stat-box-label">Defense</div><div class="char-stat-bar-wrap"><div class="char-stat-bar"><div class="char-stat-fill" style="width:96%"></div></div><span class="char-stat-val">96</span></div></div>
+            <div class="char-stat-box"><div class="char-stat-box-label">Sustain</div><div class="char-stat-bar-wrap"><div class="char-stat-bar"><div class="char-stat-fill" style="width:88%"></div></div><span class="char-stat-val">88</span></div></div>
+            <div class="char-stat-box"><div class="char-stat-box-label">Power</div><div class="char-stat-bar-wrap"><div class="char-stat-bar"><div class="char-stat-fill" style="width:80%"></div></div><span class="char-stat-val">80</span></div></div>
+            <div class="char-stat-box"><div class="char-stat-box-label">Speed</div><div class="char-stat-bar-wrap"><div class="char-stat-bar"><div class="char-stat-fill" style="width:52%"></div></div><span class="char-stat-val">52</span></div></div>
+          </div>
+          <div class="char-moves-title">Move List</div>
+          <div class="moves-accordion">
+            <div class="move-group open">
+              <button class="move-group-header"><span class="move-group-label">Standard Combos</span><span class="move-group-icon">+</span></button>
+              <div class="move-group-body">
+                <div class="move-entry"><div class="move-top"><span class="move-name">Punch Chain</span><span class="move-input">LP, LP, HP</span></div><div class="move-desc">A barrage of punches.</div></div>
+                <div class="move-entry"><div class="move-top"><span class="move-name">Kick Chain</span><span class="move-input">LK, LK, HK</span></div><div class="move-desc">A barrage of kicks.</div></div>
+                <div class="move-entry"><div class="move-top"><span class="move-name">Punch Kick Chain I</span><span class="move-input">LP, HP, HK</span></div><div class="move-desc">A barrage of punches and kicks.</div></div>
+                <div class="move-entry"><div class="move-top"><span class="move-name">Punch Kick Chain II</span><span class="move-input">LP, LK, HK</span></div><div class="move-desc">A barrage of punches and kicks.</div></div>
+                <div class="move-entry"><div class="move-top"><span class="move-name">Launcher</span><span class="move-input">↓→ HP</span></div><div class="move-desc">A punch that renders the enemy airborne.</div></div>
+                <div class="move-entry"><div class="move-top"><span class="move-name">Diving Kick</span><span class="move-input">↑→ HK</span></div><div class="move-desc">A jumping downward kick.</div></div>
+              </div>
+            </div>
+            <div class="move-group">
+              <button class="move-group-header"><span class="move-group-label">Unique Arts</span><span class="move-group-icon">+</span></button>
+              <div class="move-group-body">
+                <div class="move-entry"><div class="move-top"><span class="move-name">Azure Dragon Scale</span><span class="move-input">HP, ↓↓</span></div><div class="move-desc">Spectral dragon scales cloak his body, reflecting incoming force as if the sea itself rejected the strike.</div></div>
+                <div class="move-entry"><div class="move-top"><span class="move-name">Immortal Tortoise Body</span><span class="move-input">HK, ↓↓</span></div><div class="move-desc">Channeling the primordial guardian, his physique hardens like ancient stone, amplifying both destructive might and defensive fortitude.</div></div>
+                <div class="move-entry"><div class="move-top"><span class="move-name">Ocean Rebirth Scripture</span><span class="move-input">[Any Form] HP, ←↓→</span></div><div class="move-desc">A surge of tranquil azure water flows through his meridians, washing away impurities and restoring his wounded form.</div></div>
+                <div class="move-entry"><div class="move-top"><span class="move-name">Unstoppable Sea Dragon</span><span class="move-input">[Any Form] ↓→ LK, HK</span></div><div class="move-desc">Aaron charges forth like a tidal dragon unleashed, dragging all in his path as though caught in a raging current.</div></div>
+                <div class="move-entry"><div class="move-top"><span class="move-name">Azure Dragon Ascension</span><span class="move-input">[Any Form · HP≤50%] ↓←→ LK, HK</span></div><div class="move-desc">He sinks into the earth like water into sand, erupting beneath his enemy in a spiraling dragon strike that sends them skyward.</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DAMON CHEON -->
+      <div class="char-panel panel-damon" id="panel-damon">
+        <div class="char-preview">
+          <div class="char-preview-frame">
+            <div class="char-preview-corner cpc-tl"></div><div class="char-preview-corner cpc-tr"></div>
+            <div class="char-preview-corner cpc-bl"></div><div class="char-preview-corner cpc-br"></div>
+            <img src="../assets/images/martialascension/DamonCheonPreview.png" alt="Damon Cheon" class="char-preview-img">
+          </div>
+          <div class="char-archetype">☯ Offensive · Lifesteal · Crowd Control · Mobile</div>
+        </div>
+        <div class="char-info">
+          <span class="char-info-badge">Demon King</span>
+          <div class="char-info-name">Damon Cheon</div>
+          <div class="char-info-title">Crimson Heaven Demon King · Heavenly Demon Cult</div>
+          <div class="char-info-divider"></div>
+          <p class="char-info-lore">He killed his way to the throne. With blood-red hair and crimson eyes, he dyed the heavens red the day he usurped the Demon God's seat. Damon burns his own lifespan for raw destructive power, sustains himself with lifesteal, closes distance with terrifying mobility, and crushes opponents with crowd control that leaves no escape. The absolute — in every sense of the word.</p>
+          <div class="char-stats-grid">
+            <div class="char-stat-box"><div class="char-stat-box-label">Power</div><div class="char-stat-bar-wrap"><div class="char-stat-bar"><div class="char-stat-fill" style="width:96%"></div></div><span class="char-stat-val">96</span></div></div>
+            <div class="char-stat-box"><div class="char-stat-box-label">Lifesteal</div><div class="char-stat-bar-wrap"><div class="char-stat-bar"><div class="char-stat-fill" style="width:88%"></div></div><span class="char-stat-val">88</span></div></div>
+            <div class="char-stat-box"><div class="char-stat-box-label">Speed</div><div class="char-stat-bar-wrap"><div class="char-stat-bar"><div class="char-stat-fill" style="width:83%"></div></div><span class="char-stat-val">83</span></div></div>
+            <div class="char-stat-box"><div class="char-stat-box-label">Chaos</div><div class="char-stat-bar-wrap"><div class="char-stat-bar"><div class="char-stat-fill" style="width:100%"></div></div><span class="char-stat-val">100</span></div></div>
+          </div>
+          <div class="char-moves-title">Move List</div>
+          <div class="moves-accordion">
+            <div class="move-group open">
+              <button class="move-group-header"><span class="move-group-label">Standard Combos</span><span class="move-group-icon">+</span></button>
+              <div class="move-group-body">
+                <div class="move-entry"><div class="move-top"><span class="move-name">Punch Chain</span><span class="move-input">LP, LP, HP</span></div><div class="move-desc">A barrage of punches.</div></div>
+                <div class="move-entry"><div class="move-top"><span class="move-name">Kick Chain</span><span class="move-input">LK, LK, HK</span></div><div class="move-desc">A barrage of kicks.</div></div>
+                <div class="move-entry"><div class="move-top"><span class="move-name">Punch Kick Chain I</span><span class="move-input">LP, HP, HK</span></div><div class="move-desc">A barrage of punches and kicks.</div></div>
+                <div class="move-entry"><div class="move-top"><span class="move-name">Punch Kick Chain II</span><span class="move-input">LP, LK, HK</span></div><div class="move-desc">A barrage of punches and kicks.</div></div>
+                <div class="move-entry"><div class="move-top"><span class="move-name">Launcher</span><span class="move-input">↓→ HP</span></div><div class="move-desc">A punch that renders the enemy airborne.</div></div>
+                <div class="move-entry"><div class="move-top"><span class="move-name">Diving Kick</span><span class="move-input">↑→ HK</span></div><div class="move-desc">A jumping downward kick.</div></div>
+              </div>
+            </div>
+            <div class="move-group">
+              <button class="move-group-header"><span class="move-group-label">Unique Arts</span><span class="move-group-icon">+</span></button>
+              <div class="move-group-body">
+                <div class="move-entry"><div class="move-top"><span class="move-name">Crimson Heaven Awakening</span><span class="move-input">↓→ LK, HP</span></div><div class="move-desc">He burns his own lifespan to ignite demonic power, trading blood for overwhelming destruction and vampiric dominance.</div></div>
+                <div class="move-entry"><div class="move-top"><span class="move-name">Heaven Splitting Demon Step</span><span class="move-input">↓↓ →→</span></div><div class="move-desc">A violent forward dash that shatters distance itself; under Awakening, the next strike carries amplified demonic wrath.</div></div>
+                <div class="move-entry"><div class="move-top"><span class="move-name">Heaven Shadow Reversal Step</span><span class="move-input">↓↓ ←←</span></div><div class="move-desc">He retreats like a vanishing devil, gathering killing intent so his following attack strikes with doubled cruelty.</div></div>
+                <div class="move-entry"><div class="move-top"><span class="move-name">Abyssal Demon Claw</span><span class="move-input">↓↓ LP, HP</span></div><div class="move-desc">A crimson demonic talon erupts from beneath the enemy, launching them into the air like prey seized by hell.</div></div>
+                <div class="move-entry"><div class="move-top"><span class="move-name">Heaven Devouring Abyss</span><span class="move-input">↓↓ LK, HK</span></div><div class="move-desc">He manifests a demonic vortex that drags all into its grasp; under Awakening, those trapped suffer a crushing soul-stunning collapse.</div></div>
+                <div class="move-entry"><div class="move-top"><span class="move-name">Crimson Heaven Annihilation</span><span class="move-input">→ LK, HP, LP, HK</span></div><div class="move-desc">He brands the enemy with a demonic sigil that records all suffering dealt, detonating moments later to return their accumulated pain as absolute destruction.</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CAMPAIGN LORE -->
+  <section id="ma-lore">
+    <div class="ma-lore-inner">
+      <div class="reveal">
+        <p class="section-label-red">Campaign</p>
+        <h2 class="section-title">The <span class="accent-red">Four</span> Paths</h2>
+        <div class="divider-red"></div>
+        <p style="font-size:0.9rem;color:var(--muted);line-height:1.9;max-width:680px;">Each warrior carries a different story through the martial world. Three battles. Three rivals. One truth — only one path can be supreme.</p>
+      </div>
+
+      <div class="lore-paths reveal">
+
+        <div class="lore-path lore-path-ethan">
+          <span class="lore-path-glyph">劍</span>
+          <div class="lore-path-name">Ethan Li</div>
+          <div class="lore-path-title">White Wind Sword Saint</div>
+          <div class="lore-path-beats">
+            <div class="lore-beat"><span class="lore-beat-num">01</span><div><span>Holy Son of the Sword God Palace. At the grand Martial Exhibition, he faces his best friend and rival in the finals.</span><span class="lore-beat-stage">vs Lucas Tang · Sword God Arena</span></div></div>
+            <div class="lore-beat"><span class="lore-beat-num">02</span><div><span>One of the world's greatest warriors now, he crosses paths with the infamous Azure Dragon Fist King during an expedition into the Black Forest.</span><span class="lore-beat-stage">vs Aaron Shu · Black Forest</span></div></div>
+            <div class="lore-beat"><span class="lore-beat-num">03</span><div><span>His legend is tested when the Crimson Heaven Demon God launches war against the righteous path.</span><span class="lore-beat-stage">vs Damon Cheon · Immortal Ancient Battlefield</span></div></div>
+          </div>
+        </div>
+
+        <div class="lore-path lore-path-lucas">
+          <span class="lore-path-glyph">毒</span>
+          <div class="lore-path-name">Lucas Tang</div>
+          <div class="lore-path-title">Ten Thousand Poison Sovereign</div>
+          <div class="lore-path-beats">
+            <div class="lore-beat"><span class="lore-beat-num">01</span><div><span>Born with the sacred Myriad Venom Body. A young Lucas must defeat the sect leader's prized disciple to secure a vital medicinal ingredient.</span><span class="lore-beat-stage">vs Aaron Shu · Black Forest</span></div></div>
+            <div class="lore-beat"><span class="lore-beat-num">02</span><div><span>At the Sword God Palace's great Martial Exhibition, Lucas performs brilliantly — until he reaches the finals and faces his closest rival.</span><span class="lore-beat-stage">vs Ethan Li · Sword God Arena</span></div></div>
+            <div class="lore-beat"><span class="lore-beat-num">03</span><div><span>When the Heavenly Demon Cult attacks and all masters tremble in fear — only Lucas has the courage to step forward alone against the Crimson Heaven Demon God.</span><span class="lore-beat-stage">vs Damon Cheon · Immortal Ancient Battlefield</span></div></div>
+          </div>
+        </div>
+
+        <div class="lore-path lore-path-aaron">
+          <span class="lore-path-glyph">龍</span>
+          <div class="lore-path-name">Aaron Shu</div>
+          <div class="lore-path-title">Azure Dragon Fist King</div>
+          <div class="lore-path-beats">
+            <div class="lore-beat"><span class="lore-beat-num">01</span><div><span>Raised from nothing, taken in by the old master. Poison clan members come seeking an ingredient — Aaron is sent to fight their young heir.</span><span class="lore-beat-stage">vs Lucas Tang · Black Forest</span></div></div>
+            <div class="lore-beat"><span class="lore-beat-num">02</span><div><span>Ten years later, now the feared Fist King, he crosses a Sword God Palace expedition in the Black Forest. Conflict between the righteous and unorthodox paths is inevitable.</span><span class="lore-beat-stage">vs Ethan Li · Black Forest</span></div></div>
+            <div class="lore-beat"><span class="lore-beat-num">03</span><div><span>The Heavenly Demon Cult conquers the Raging Tide Gate. In a rage that burns to his bones, Aaron challenges the Crimson Heaven Demon God himself.</span><span class="lore-beat-stage">vs Damon Cheon · Immortal Ancient Battlefield</span></div></div>
+          </div>
+        </div>
+
+        <div class="lore-path lore-path-damon">
+          <span class="lore-path-glyph">魔</span>
+          <div class="lore-path-name">Damon Cheon</div>
+          <div class="lore-path-title">Crimson Heaven Demon King</div>
+          <div class="lore-path-beats">
+            <div class="lore-beat"><span class="lore-beat-num">01</span><div><span>He dyed the heavens red. Now he devours sect after sect — until a burly man filled with righteous rage steps forward to challenge the absolute.</span><span class="lore-beat-stage">vs Aaron Shu · Immortal Ancient Battlefield</span></div></div>
+            <div class="lore-beat"><span class="lore-beat-num">02</span><div><span>He watches the righteous path crumble with amusement — until one man alone steps out of the chaos toward him.</span><span class="lore-beat-stage">vs Lucas Tang · Immortal Ancient Battlefield</span></div></div>
+            <div class="lore-beat"><span class="lore-beat-num">03</span><div><span>As he moves to finish Lucas Tang, a gust of wind rises. A figure clad in white descends from the sky above — sword pointed at Damon. For the first time in a long while, he feels something close to danger.</span><span class="lore-beat-stage">vs Ethan Li · Immortal Ancient Battlefield</span></div></div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="ma-world-quote reveal">
+        <p>In a world where strength is supreme, the weak have no voice, the strong have no mercy, and the heavens themselves watch in silence — waiting to see who dares to ascend.</p>
+        <cite>— The Opening Scroll, Martial Ascension</cite>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="ma-cta">
+    <div class="ma-cta-seal">升</div>
+    <div class="ma-cta-inner reveal">
+      <p class="section-label-red">Your Path Awaits</p>
+      <h2 class="section-title">Begin Your <span class="accent-red">Ascension</span></h2>
+      <div class="divider-red-center"></div>
+      <p>Martial Ascension is coming soon. Step into the world of Murim, choose your fighter, and carve your name into the Heavens.</p>
+      <div class="ma-cta-links">
+        <a href="../contact.html" class="btn-ma">Contact the Studio</a>
+        <a href="https://www.facebook.com/profile.php?id=61579910391001" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">Follow on Facebook</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">
+      <img src="../assets/images/studio/LogoTransparent.png" alt="Starloom">
+      <span>Starloom</span>
+    </div>
+    <p class="footer-copy">© 2025 Starloom. Crafting wonder, thread by thread.</p>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
