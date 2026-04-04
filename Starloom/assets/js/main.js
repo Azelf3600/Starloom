@@ -3,6 +3,9 @@
    Cursor, star field, particles, scroll reveal
    ============================================================ */
 
+// ── GLOBALS ──
+const starField = document.getElementById('starField');
+
 // ── CUSTOM CURSOR ──
 const cursor = document.getElementById('cursor');
 const ring   = document.getElementById('cursorRing');
@@ -17,9 +20,33 @@ function animateCursor() {
   ry += (my - ry) * 0.12;
   ring.style.left = rx + 'px';
   ring.style.top  = ry + 'px';
+
   requestAnimationFrame(animateCursor);
 }
 animateCursor();
+
+// ── SCROLL PARALLAX ──
+let lastScrollY = window.scrollY;
+let ticking = false;
+
+window.addEventListener('scroll', () => {
+  lastScrollY = window.scrollY;
+  if (!ticking) {
+    window.requestAnimationFrame(() => {
+      if (starField) {
+        const layers = starField.querySelectorAll('.star-layer');
+        if (layers.length === 3) {
+          // Positive translateY counteracts the scrolling up, making layers move slower
+          layers[0].style.transform = `translateY(${lastScrollY * 0.6}px)`; // background (slowest)
+          layers[1].style.transform = `translateY(${lastScrollY * 0.4}px)`; // middle (medium)
+          layers[2].style.transform = `translateY(${lastScrollY * 0.15}px)`;// foreground (fastest)
+        }
+      }
+      ticking = false;
+    });
+    ticking = true;
+  }
+});
 
 document.querySelectorAll('a, button, .game-card').forEach(el => {
   el.addEventListener('mouseenter', () => {
@@ -38,9 +65,21 @@ document.querySelectorAll('a, button, .game-card').forEach(el => {
 
 // ── STAR FIELD ──
 // Only runs if #starField exists on the page
-const starField = document.getElementById('starField');
 if (starField) {
-  for (let i = 0; i < 120; i++) {
+  // Create 3 layers for parallax
+  const bgLayer = document.createElement('div');
+  const midLayer = document.createElement('div');
+  const fgLayer = document.createElement('div');
+  
+  bgLayer.className = 'star-layer';
+  midLayer.className = 'star-layer';
+  fgLayer.className = 'star-layer';
+  
+  starField.appendChild(bgLayer);
+  starField.appendChild(midLayer);
+  starField.appendChild(fgLayer);
+
+  for (let i = 0; i < 150; i++) {
     const s    = document.createElement('div');
     s.className = 'star';
     const size = Math.random() * 2 + 0.5;
@@ -56,7 +95,24 @@ if (starField) {
       `--d:${(Math.random() * 4 + 2).toFixed(1)}s`,
       `animation-delay:${(Math.random() * 5).toFixed(1)}s`
     ].join(';');
-    starField.appendChild(s);
+    
+    // Distribute stars among layers
+    if (i < 70) bgLayer.appendChild(s);
+    else if (i < 120) midLayer.appendChild(s);
+    else fgLayer.appendChild(s);
+  }
+
+  // Add shooting stars
+  for (let j = 0; j < 8; j++) {
+    const ss = document.createElement('div');
+    ss.className = 'shooting-star';
+    ss.style.cssText = [
+      `left:${Math.random() * 100}%`,
+      `top:${Math.random() * -20}%`,
+      `--sd:${(Math.random() * 10 + 5).toFixed(1)}s`,
+      `animation-delay:${(Math.random() * 15).toFixed(1)}s`
+    ].join(';');
+    midLayer.appendChild(ss);
   }
 }
 

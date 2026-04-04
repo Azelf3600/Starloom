@@ -101,13 +101,26 @@ nav {
 #hero::before {
   content: ''; position: absolute; inset: 0;
   background:
-    radial-gradient(ellipse 80% 60% at 50% 0%, rgba(160,210,240,0.06) 0%, transparent 70%),
-    radial-gradient(ellipse 40% 40% at 20% 80%, rgba(100,160,220,0.05) 0%, transparent 60%);
+    radial-gradient(ellipse 80% 60% at 50% 0%, rgba(160,210,240,0.06) 0%, transparent 70%);
 }
-.star-field { position: absolute; inset: 0; overflow: hidden; }
+.star-field { position: fixed; top: -10vh; bottom: -10vh; left: -2vw; right: -2vw; z-index: -10; pointer-events: none; }
+.star-layer { position: absolute; inset: 0; }
 .star {
   position: absolute; background: white; border-radius: 50%;
   animation: twinkle var(--d) ease-in-out infinite alternate;
+}
+.shooting-star {
+  position: absolute;
+  width: 120px; height: 1px;
+  background: linear-gradient(90deg, rgba(255,255,255,0.8), transparent);
+  animation: shoot var(--sd) linear infinite;
+  opacity: 0;
+  transform: rotate(-45deg);
+}
+@keyframes shoot {
+  0% { transform: translateX(0) translateY(0) rotate(-45deg); opacity: 1; }
+  20% { opacity: 0; }
+  100% { transform: translateX(-800px) translateY(800px) rotate(-45deg); opacity: 0; }
 }
 
 .hero-emblem {
@@ -159,7 +172,7 @@ nav {
 }
 
 /* ── GAMES ── */
-#games { background: var(--bg); }
+#games { background: transparent; }
 .games-header { text-align: center; margin-bottom: 5rem; }
 .games-header .divider { margin: 1.5rem auto; }
 
@@ -254,7 +267,7 @@ nav {
 .particle { position: absolute; border-radius: 50%; animation: drift var(--pd) ease-in-out infinite alternate; }
 
 /* ── STUDIO ── */
-#studio { background: var(--bg2); }
+#studio { background: linear-gradient(to bottom, transparent, rgba(11, 13, 18, 0.4), transparent); }
 .studio-inner {
   max-width: 1200px; margin: 0 auto;
   display: grid; grid-template-columns: 1fr 1fr;
@@ -295,7 +308,7 @@ nav {
 }
 
 /* ── TEAM ── */
-#team { background: var(--bg); text-align: center; }
+#team { background: transparent; text-align: center; }
 .team-header { margin-bottom: 4rem; }
 .team-header .divider { margin: 1.5rem auto; }
 
@@ -326,7 +339,7 @@ nav {
 .member-role { font-size: 0.68rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ice-dim); }
 
 /* ── CONTACT ── */
-#contact { background: var(--bg2); text-align: center; position: relative; overflow: hidden; }
+#contact { background: radial-gradient(ellipse at bottom, rgba(14, 17, 24, 0.6), transparent); text-align: center; position: relative; overflow: hidden; }
 #contact::before {
   content: ''; position: absolute; inset: 0;
   background: radial-gradient(ellipse 60% 50% at 50% 100%, rgba(160,210,240,0.05) 0%, transparent 70%);
@@ -338,7 +351,8 @@ nav {
 
 /* ── FOOTER ── */
 footer {
-  background: var(--bg); border-top: 1px solid var(--border);
+  background: rgba(11, 13, 18, 0.85); border-top: 1px solid var(--border);
+  backdrop-filter: blur(8px);
   padding: 2.5rem 4rem;
   display: flex; align-items: center; justify-content: space-between;
 }

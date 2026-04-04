@@ -18,6 +18,10 @@ html { scroll-behavior: smooth; }
 
 body {
   background: var(--bg);
+  background-image: 
+    radial-gradient(ellipse at 15% 50%, rgba(160, 210, 240, 0.03) 0%, transparent 50%),
+    radial-gradient(ellipse at 85% 30%, rgba(200, 160, 240, 0.02) 0%, transparent 50%);
+  background-attachment: fixed;
   color: var(--text);
   font-family: var(--font-body);
   font-weight: 300;
