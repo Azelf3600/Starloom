@@ -172,7 +172,7 @@ nav {
 }
 
 /* ── GAMES ── */
-#games { background: transparent; }
+#games { background: rgba(11, 13, 18, 0.45); backdrop-filter: blur(3px); }
 .games-header { text-align: center; margin-bottom: 5rem; }
 .games-header .divider { margin: 1.5rem auto; }
 
@@ -267,7 +267,7 @@ nav {
 .particle { position: absolute; border-radius: 50%; animation: drift var(--pd) ease-in-out infinite alternate; }
 
 /* ── STUDIO ── */
-#studio { background: linear-gradient(to bottom, transparent, rgba(11, 13, 18, 0.4), transparent); }
+#studio { background: rgba(14, 17, 24, 0.45); backdrop-filter: blur(3px); }
 .studio-inner {
   max-width: 1200px; margin: 0 auto;
   display: grid; grid-template-columns: 1fr 1fr;
@@ -308,7 +308,7 @@ nav {
 }
 
 /* ── TEAM ── */
-#team { background: transparent; text-align: center; }
+#team { background: rgba(11, 13, 18, 0.45); text-align: center; backdrop-filter: blur(3px); }
 .team-header { margin-bottom: 4rem; }
 .team-header .divider { margin: 1.5rem auto; }
 
@@ -339,7 +339,7 @@ nav {
 .member-role { font-size: 0.68rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ice-dim); }
 
 /* ── CONTACT ── */
-#contact { background: radial-gradient(ellipse at bottom, rgba(14, 17, 24, 0.6), transparent); text-align: center; position: relative; overflow: hidden; }
+#contact { background: rgba(14, 17, 24, 0.45); text-align: center; position: relative; overflow: hidden; backdrop-filter: blur(3px); }
 #contact::before {
   content: ''; position: absolute; inset: 0;
   background: radial-gradient(ellipse 60% 50% at 50% 100%, rgba(160,210,240,0.05) 0%, transparent 70%);
