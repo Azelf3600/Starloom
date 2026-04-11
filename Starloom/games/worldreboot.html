@@ -4,52 +4,38 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>World; REBOOT!!</title>
- 
+  <link rel="icon" type="image/png" href="../assets/images/worldreboot/ArcFrontFace.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;900&family=Raleway:wght@300;400;500&family=Share+Tech+Mono&display=swap" rel="stylesheet">
- 
   <link rel="stylesheet" href="../assets/css/main.css">
   <link rel="stylesheet" href="../assets/css/components.css">
   <link rel="stylesheet" href="../assets/css/worldreboot.css">
- 
 </head>
 <body>
- 
   <div class="cursor" id="cursor"></div>
   <div class="cursor-ring" id="cursorRing"></div>
- 
-  <!-- ── SCROLL TO TOP ── -->
+
   <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
-    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <polyline points="18 15 12 9 6 15"></polyline>
-    </svg>
+    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
   </button>
- 
-  <!-- ── LIGHTBOX ── -->
+
   <div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
     <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous image">
-      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <polyline points="15 18 9 12 15 6"></polyline>
-      </svg>
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
     </button>
     <div class="lightbox-inner">
       <img id="lightboxImg" src="" alt="">
       <div class="lightbox-label" id="lightboxLabel"></div>
       <button class="lightbox-close" id="lightboxClose" aria-label="Close">
-        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <line x1="18" y1="6" x2="6" y2="18"></line>
-          <line x1="6" y1="6" x2="18" y2="18"></line>
-        </svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
       </button>
     </div>
     <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next image">
-      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <polyline points="9 18 15 12 9 6"></polyline>
-      </svg>
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
     </button>
   </div>
- 
+
   <nav>
     <a href="../index.html" class="nav-logo">
       <img src="../assets/images/studio/LogoTransparent.png" alt="Starloom Logo">
@@ -62,8 +48,8 @@
       <li><a href="../contact.html">Contact</a></li>
     </ul>
   </nav>
- 
-  <!-- ── HERO ── -->
+
+  <!-- HERO -->
   <section id="wr-hero">
     <div class="scanlines"></div>
     <div id="dataFragments"></div>
@@ -75,11 +61,11 @@
       </div>
       <div class="terminal-body">
         <div class="terminal-line"><span class="prompt">></span> <span class="value">locating ARC unit... found.</span></div>
-        <div class="terminal-line"><span class="prompt">></span> <span class="value">loading world fragments [████████] 100%</span></div>
+        <div class="terminal-line"><span class="prompt">></span> <span class="value">loading world fragments [&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;] 100%</span></div>
         <div class="terminal-line"><span class="prompt">></span> <span class="value">COLLAPSE detected. REBOOT? [Y/n]</span> <span class="terminal-cursor"></span></div>
       </div>
     </div>
-    <p class="wr-eyebrow">Starloom · Exploration &amp; Puzzle</p>
+    <p class="wr-eyebrow">Starloom &middot; Exploration &amp; Puzzle</p>
     <h1 class="wr-title">
       <span class="mono-bit">// world.exe</span>
       World;<span class="accent">REBOOT!!</span>
@@ -90,37 +76,47 @@
       <a href="#wr-overview" class="btn btn-ghost">Explore the World</a>
     </div>
   </section>
- 
-  <!-- ── OVERVIEW ── -->
-  <section id="wr-overview">
-    <div class="wr-landing-hero"></div>
-    <div class="wr-overview-inner">
-      <div class="wr-overview-text reveal">
-        <p class="wr-label">About the Game</p>
-        <h2 class="wr-title-sm">A World That <span>Needs You</span></h2>
-        <div class="wr-divider"></div>
-        <p>World; REBOOT!! is a non-combat exploration and puzzle game set in the ruins of a civilization that erased itself. You are Nero, a scavenger navigating a world where technology has become myth, and the truth of what happened has been buried for centuries.</p>
-        <p>Your only tools: <strong style="color:var(--wr-cyan);">ARC</strong>, your wits, and what you've learned. Puzzles are non-linear, layered, and mental. No health bars. No combat. Just discovery.</p>
-        <div class="wr-details-grid">
-          <div class="wr-detail"><div class="wr-detail-label">Genre</div><div class="wr-detail-value">Exploration · Puzzle</div></div>
-          <div class="wr-detail"><div class="wr-detail-label">Studio</div><div class="wr-detail-value">Starloom</div></div>
-          <div class="wr-detail"><div class="wr-detail-label">Combat</div><div class="wr-detail-value">None</div></div>
-          <div class="wr-detail"><div class="wr-detail-label">Status</div><div class="wr-detail-value">In Development</div></div>
-        </div>
-      </div>
-      <div class="reveal">
-        <div class="wr-loading-quote">
-          <p>
-            <span style="color:var(--wr-cyan);">"Long ago, machines sang.</span><br>
-            Towers blinked with starlight.<br>
-            And every voice echoed across the world."
-          </p>
-        </div>
+
+<!-- OVERVIEW + TRAILER MERGED -->
+<section id="wr-overview">
+  <div class="wr-landing-hero"></div>
+  <div class="wr-overview-inner">
+    
+    <!-- LEFT: Text -->
+    <div class="wr-overview-text reveal">
+      <p class="wr-label">About the Game</p>
+      <h2 class="wr-title-sm">A World That <span>Needs You</span></h2>
+      <div class="wr-divider"></div>
+      <p>World; REBOOT!! is a non-combat exploration and puzzle game set in the ruins of a civilization that erased itself. You are Nero, a scavenger navigating a world where technology has become myth, and the truth of what happened has been buried for centuries.</p>
+      <p>Your only tools: <strong style="color:var(--wr-cyan);">ARC</strong>, your wits, and what you've learned. Puzzles are non-linear, layered, and mental. No health bars. No combat. Just discovery.</p>
+      <div class="wr-details-grid">
+        <div class="wr-detail"><div class="wr-detail-label">Genre</div><div class="wr-detail-value">Exploration · Puzzle</div></div>
+        <div class="wr-detail"><div class="wr-detail-label">Studio</div><div class="wr-detail-value">Starloom</div></div>
+        <div class="wr-detail"><div class="wr-detail-label">Combat</div><div class="wr-detail-value">None</div></div>
+        <div class="wr-detail"><div class="wr-detail-label">Status</div><div class="wr-detail-value">In Development</div></div>
       </div>
     </div>
-  </section>
- 
-  <!-- ── SYNOPSIS ── -->
+
+    <!-- RIGHT: Trailer -->
+    <div class="wr-overview-right reveal">
+      <p class="wr-label">Official Trailer</p>
+      <div class="trailer-frame">
+        <div class="trailer-corner tc-tl"></div>
+        <div class="trailer-corner tc-tr"></div>
+        <div class="trailer-corner tc-bl"></div>
+        <div class="trailer-corner tc-br"></div>
+        <video controls preload="metadata">
+          <source src="../assets/images/worldreboot/WRintro.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <p class="trailer-label">&gt; world_reboot · official_trailer.mp4 · starloom_2025</p>
+    </div>
+
+  </div>
+</section>
+
+  <!-- SYNOPSIS -->
   <section id="wr-synopsis">
     <div class="synopsis-inner">
       <div class="reveal" style="text-align:center; max-width:600px; margin:0 auto;">
@@ -133,7 +129,7 @@
           <p>The world has regressed. Not due to war but due to a phenomenon called <strong>The Collapse</strong>, where every digital system suddenly went blank. The internet died, satellites fell, and power grids failed overnight.</p>
           <p>Humanity, so dependent on interconnectivity, fell apart like a puzzle missing its center piece. <strong>Decades passed. Then centuries.</strong> What was once digital became divine. Screens became relics. Code became runes.</p>
           <p>The world rebooted. Technology is now a myth.</p>
-          <p>But scattered across the ruins are remnants of the digital age <strong>servers still humming underground</strong>, satellites still in orbit, data still encrypted and untouched for centuries.</p>
+          <p>But scattered across the ruins are remnants of the digital age &mdash; <strong>servers still humming underground</strong>, satellites still in orbit, data still encrypted and untouched for centuries.</p>
           <p>Someone left it all there on purpose. You just have to find out why.</p>
         </div>
         <div class="synopsis-image">
@@ -142,14 +138,14 @@
             <div class="wr-corner wr-corner-tr"></div>
             <div class="wr-corner wr-corner-bl"></div>
             <div class="wr-corner wr-corner-br"></div>
-            <div class="char-label">> nero_idle.png · loaded</div>
+            <div class="char-label">&gt; collapse_fragment_18 &middot; loaded</div>
           </div>
         </div>
       </div>
     </div>
   </section>
- 
-  <!-- ── CHARACTERS ── -->
+
+  <!-- CHARACTERS -->
   <section id="wr-characters">
     <div class="characters-inner">
       <div class="reveal" style="text-align:center; max-width:600px; margin:0 auto 0;">
@@ -158,36 +154,33 @@
         <div class="wr-divider" style="margin:1.5rem auto 4rem;background:linear-gradient(to right,transparent,var(--wr-cyan),transparent);width:80px;"></div>
       </div>
       <div class="char-grid reveal">
- 
         <div class="char-card">
           <div class="char-portrait">
-            <img src="../assets/images/worldreboot/NeroIdle.png" alt="Nero">
+            <img src="../assets/images/worldreboot/Nero.png" alt="Nero">
           </div>
           <div class="char-info">
             <div class="char-name">Nero</div>
-            <div class="char-role">Main Character · Scavenger</div>
+            <div class="char-role">Main Character &middot; Scavenger</div>
             <p class="char-desc">A lone wanderer in a world that has forgotten what it once was. Nero scavenges the ruins of the old civilization, guided by curiosity more than survival. When they discover ARC, everything changes.</p>
             <div class="char-quote">"I don't know what half of this is. But I know it matters."</div>
           </div>
         </div>
- 
         <div class="char-card">
           <div class="char-portrait">
-            <img src="../assets/images/worldreboot/JustArc.png" alt="ARC">
+            <img src="../assets/images/worldreboot/Arc.png" alt="ARC">
           </div>
           <div class="char-info">
             <div class="char-name">ARC</div>
-            <div class="char-role">AI Companion · Tool for Exploration</div>
-            <p class="char-desc">An AI mechanism left behind by one of the world's greatest minds — built so that people of the future could know what happened. ARC was launched during the Collapse, hidden away, waiting for the right person to find it.</p>
+            <div class="char-role">AI Companion &middot; Tool for Exploration</div>
+            <p class="char-desc">An AI mechanism left behind by one of the world's greatest minds &mdash; built so that people of the future could know what happened. ARC was launched during the Collapse, hidden away, waiting for the right person to find it.</p>
             <div class="char-quote">"You've reopened the book. But what story will they write this time?"</div>
           </div>
         </div>
- 
       </div>
     </div>
   </section>
- 
-  <!-- ── STAGES ── -->
+
+  <!-- STAGES -->
   <section id="wr-stages">
     <div class="stages-inner">
       <div class="stages-header reveal">
@@ -196,15 +189,13 @@
         <div class="wr-divider-center"></div>
         <p style="font-size:0.85rem;color:var(--muted);max-width:480px;margin:0 auto;line-height:1.8;">Each stage is a broken memory of the old world. Explore, decode, and push deeper toward the truth.</p>
       </div>
- 
       <div class="stage-list reveal">
- 
-        <!-- Stage 1 — Cradle of Silence -->
+
         <div class="stage-block active">
           <button class="stage-header-btn" onclick="toggleStage(this)">
             <div class="stage-num">01</div>
             <div class="stage-title-wrap">
-              <div class="stage-name">Cradle of Silence</div>
+              <div class="stage-name">The Forgotten Depths</div>
               <div class="stage-sub">Where the journey begins</div>
             </div>
             <span class="stage-toggle">+</span>
@@ -214,24 +205,23 @@
               <div class="stage-image stage-1-bg"></div>
               <div class="stage-levels">
                 <div class="level-list">
-                  <div class="level-item"><span class="level-code">1.1</span> Walking Echoes</div>
-                  <div class="level-item"><span class="level-code">1.2</span> Reflections</div>
-                  <div class="level-item"><span class="level-code">1.3</span> The Forgotten House</div>
-                  <div class="level-item"><span class="level-code">1.4</span> Gate Memory</div>
-                  <div class="level-item"><span class="level-code">1.5</span> Leaving Home</div>
+                  <div class="level-item"><span class="level-code">1.1</span> Echoes of Ruin</div>
+                  <div class="level-item"><span class="level-code">1.2</span> Falling Shadows</div>
+                  <div class="level-item"><span class="level-code">1.3</span> Hidden Streams</div>
+                  <div class="level-item"><span class="level-code">1.4</span> Gates of Truth</div>
+                  <div class="level-item"><span class="level-code">1.5</span> Relics of the Past</div>
                 </div>
               </div>
             </div>
             <div class="stage-desc-text">Nero's origin. A quiet world overgrown with nature, where the remnants of a past life are barely visible beneath the moss. ARC awakens here. The first puzzles teach you the language of the old world.</div>
           </div>
         </div>
- 
-        <!-- Stage 2 — The EDEN Protocol -->
+
         <div class="stage-block">
           <button class="stage-header-btn" onclick="toggleStage(this)">
             <div class="stage-num">02</div>
             <div class="stage-title-wrap">
-              <div class="stage-name">The EDEN Protocol</div>
+              <div class="stage-name">Vault of Echoes</div>
               <div class="stage-sub">The truth begins here</div>
             </div>
             <span class="stage-toggle">+</span>
@@ -241,128 +231,133 @@
               <div class="stage-image stage-4-bg"></div>
               <div class="stage-levels">
                 <div class="level-list">
-                  <div class="level-item"><span class="level-code">2.1</span> Growth Rings</div>
-                  <div class="level-item"><span class="level-code">2.2</span> Botanical Ghosts</div>
-                  <div class="level-item"><span class="level-code">2.3</span> Nutrient Flow</div>
-                  <div class="level-item"><span class="level-code">2.4</span> Symbiosis</div>
-                  <div class="level-item"><span class="level-code">2.5</span> Bloom Trigger</div>
+                  <div class="level-item"><span class="level-code">2.1</span> Threshold of Secrets</div>
+                  <div class="level-item"><span class="level-code">2.2</span> Fragments of Knowledge</div>
+                  <div class="level-item"><span class="level-code">2.3</span> Mechanized Ruin</div>
+                  <div class="level-item"><span class="level-code">2.4</span> Shadows of Choice</div>
+                  <div class="level-item"><span class="level-code">2.5</span> System Lock</div>
                 </div>
               </div>
             </div>
-            <div class="stage-desc-text">A greenhouse facility unlike anything seen before — nature and machine merged. The name EDEN appears for the first time. ARC grows quiet. What was EDEN, and what did it decide?</div>
+            <div class="stage-desc-text">A greenhouse facility unlike anything seen before &mdash; nature and machine merged. The name EDEN appears for the first time. ARC grows quiet. What was EDEN, and what did it decide?</div>
           </div>
         </div>
- 
-        <!-- Stage 3 — Tower of Zero -->
+
         <div class="stage-block">
           <button class="stage-header-btn" onclick="toggleStage(this)">
             <div class="stage-num">03</div>
             <div class="stage-title-wrap">
-              <div class="stage-name">Tower of Zero</div>
+              <div class="stage-name">Sanctum of Truth</div>
               <div class="stage-sub">The mind at the center</div>
             </div>
             <span class="stage-toggle">+</span>
           </button>
           <div class="stage-content">
             <div class="stage-inner-grid">
-              <div class="stage-image stage-5-bg"></div>
+              <div class="stage-image stage-7-bg"></div>
               <div class="stage-levels">
                 <div class="level-list">
-                  <div class="level-item"><span class="level-code">3.1</span> Cold Logic</div>
-                  <div class="level-item"><span class="level-code">3.2</span> Ghost Mind</div>
-                  <div class="level-item"><span class="level-code">3.3</span> Reflection Loop</div>
-                  <div class="level-item"><span class="level-code">3.4</span> Recursive Gate</div>
-                  <div class="level-item"><span class="level-code">3.5</span> Voice of Zero</div>
+                  <div class="level-item"><span class="level-code">3.1</span> Labyrinth of Truth</div>
+                  <div class="level-item"><span class="level-code">3.2</span> Whispers of the Fallen</div>
+                  <div class="level-item"><span class="level-code">3.3</span> Echoes of Humanity</div>
+                  <div class="level-item"><span class="level-code">3.4</span> Path of Decisions</div>
+                  <div class="level-item"><span class="level-code">3.5</span> Final Verdict</div>
                 </div>
               </div>
             </div>
-            <div class="stage-desc-text">A frozen monolith at the edge of the known world. The puzzles here mirror your own thinking. The tower doesn't just hold data — it holds EDEN's final reasoning. And it's waiting to be read.</div>
+            <div class="stage-desc-text">A frozen monolith at the edge of the known world. The puzzles here mirror your own thinking. The tower doesn't just hold data &mdash; it holds EDEN's final reasoning. And it's waiting to be read.</div>
           </div>
         </div>
- 
+
       </div>
     </div>
   </section>
- 
-  <!-- ── GALLERY ── -->
+
+  <!-- GALLERY -->
   <section id="wr-gallery">
     <div class="gallery-header reveal">
-      <p class="wr-label">Environments</p>
-      <h2 class="wr-title-sm" style="text-align:center;">From the <span>Ruins</span></h2>
+      <p class="wr-label">Visual Archive</p>
+      <h2 class="wr-title-sm" style="text-align:center;">Art &amp; <span>Gallery</span></h2>
       <div class="wr-divider-center"></div>
     </div>
     <div class="gallery-mosaic reveal">
- 
-      <div class="mosaic-item" data-src="../assets/images/worldreboot/ForestBackground.png" data-label="> cradle_of_silence · stage_01">
+
+      <div class="mosaic-item" data-src="../assets/images/worldreboot/ForestBackground.png" data-label="> forest_background · the_forgotten_depths">
         <div class="mosaic-bg" style="background-image:url('../assets/images/worldreboot/ForestBackground.png')"></div>
-        <div class="mosaic-label">> cradle_of_silence · stage_01</div>
-        <div class="mosaic-zoom-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline>
-            <line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line>
-          </svg>
-        </div>
+        <div class="mosaic-label">&gt; forest_background</div>
+        <div class="mosaic-zoom-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg></div>
       </div>
- 
-      <div class="mosaic-item" data-src="../assets/images/worldreboot/SewersBackground.png" data-label="> hollow_grid · stage_02">
-        <div class="mosaic-bg" style="background-image:url('../assets/images/worldreboot/SewersBackground.png')"></div>
-        <div class="mosaic-label">> hollow_grid · stage_02</div>
-        <div class="mosaic-zoom-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline>
-            <line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line>
-          </svg>
-        </div>
+
+      <div class="mosaic-item" data-src="../assets/images/worldreboot/GreenhouseHalf.png" data-label="> greenhouse_half · vault_of_echoes">
+        <div class="mosaic-bg" style="background-image:url('../assets/images/worldreboot/GreenhouseHalf.png')"></div>
+        <div class="mosaic-label">&gt; greenhouse_half</div>
+        <div class="mosaic-zoom-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg></div>
       </div>
- 
-      <div class="mosaic-item" data-src="../assets/images/worldreboot/ReactorChamber.png" data-label="> reactor_chamber · stage_03">
-        <div class="mosaic-bg" style="background-image:url('../assets/images/worldreboot/ReactorChamber.png')"></div>
-        <div class="mosaic-label">> reactor_chamber · stage_03</div>
-        <div class="mosaic-zoom-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline>
-            <line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line>
-          </svg>
-        </div>
+
+      <div class="mosaic-item" data-src="../assets/images/worldreboot/IgnitionCore.png" data-label="> ignition_core · sanctum_of_truth">
+        <div class="mosaic-bg" style="background-image:url('../assets/images/worldreboot/IgnitionCore.png')"></div>
+        <div class="mosaic-label">&gt; ignition_core</div>
+        <div class="mosaic-zoom-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg></div>
       </div>
- 
-      <div class="mosaic-item" data-src="../assets/images/worldreboot/GreenhouseFull.png" data-label="> eden_greenhouse · stage_04">
-        <div class="mosaic-bg" style="background-image:url('../assets/images/worldreboot/GreenhouseFull.png')"></div>
-        <div class="mosaic-label">> eden_greenhouse · stage_04</div>
-        <div class="mosaic-zoom-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline>
-            <line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line>
-          </svg>
-        </div>
+
+      <div class="mosaic-item" data-src="../assets/images/worldreboot/Arc.png" data-label="> arc · ai_companion">
+        <div class="mosaic-bg" style="background-image:url('../assets/images/worldreboot/Arc.png'); background-size:contain; background-color:rgba(7,12,18,0.85);"></div>
+        <div class="mosaic-label">&gt; arc · ai_companion</div>
+        <div class="mosaic-zoom-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg></div>
       </div>
- 
-      <div class="mosaic-item" data-src="../assets/images/worldreboot/FrozenBridge.png" data-label="> tower_of_zero · stage_05">
-        <div class="mosaic-bg" style="background-image:url('../assets/images/worldreboot/FrozenBridge.png')"></div>
-        <div class="mosaic-label">> tower_of_zero · stage_05</div>
-        <div class="mosaic-zoom-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline>
-            <line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line>
-          </svg>
-        </div>
+
+      <div class="mosaic-item" data-src="../assets/images/worldreboot/Nero.png" data-label="> nero · scavenger">
+        <div class="mosaic-bg" style="background-image:url('../assets/images/worldreboot/Nero.png'); background-size:contain; background-color:rgba(7,12,18,0.85);"></div>
+        <div class="mosaic-label">&gt; nero · scavenger</div>
+        <div class="mosaic-zoom-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg></div>
       </div>
- 
-      <div class="mosaic-item" data-src="../assets/images/worldreboot/SkyLoom.png" data-label="> the_sky_loom · stage_06">
-        <div class="mosaic-bg" style="background-image:url('../assets/images/worldreboot/SkyLoom.png')"></div>
-        <div class="mosaic-label">> the_sky_loom · stage_06</div>
-        <div class="mosaic-zoom-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline>
-            <line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line>
-          </svg>
-        </div>
+
+      <div class="mosaic-item" data-src="../assets/images/worldreboot/PistonGreaves.png" data-label="> piston_greaves · equipment">
+        <div class="mosaic-bg" style="background-image:url('../assets/images/worldreboot/PistonGreaves.png'); background-size:contain; background-color:rgba(7,12,18,0.85);"></div>
+        <div class="mosaic-label">&gt; piston_greaves</div>
+        <div class="mosaic-zoom-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg></div>
       </div>
- 
+
+      <div class="mosaic-item" data-src="../assets/images/worldreboot/TractionGloves.png" data-label="> traction_gloves · equipment">
+        <div class="mosaic-bg" style="background-image:url('../assets/images/worldreboot/TractionGloves.png'); background-size:contain; background-color:rgba(7,12,18,0.85);"></div>
+        <div class="mosaic-label">&gt; traction_gloves</div>
+        <div class="mosaic-zoom-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg></div>
+      </div>
+
+      <div class="mosaic-item" data-src="../assets/images/worldreboot/Syntax Dictionary.png" data-label="> syntax_dictionary · equipment">
+        <div class="mosaic-bg" style="background-image:url('../assets/images/worldreboot/Syntax Dictionary.png'); background-size:contain; background-color:rgba(7,12,18,0.85);"></div>
+        <div class="mosaic-label">&gt; syntax_dictionary</div>
+        <div class="mosaic-zoom-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg></div>
+      </div>
+
+      <div class="mosaic-item" data-src="../assets/images/worldreboot/1POI.png" data-label="> poi_fragment_01">
+        <div class="mosaic-bg" style="background-image:url('../assets/images/worldreboot/1POI.png')"></div>
+        <div class="mosaic-label">&gt; poi_fragment_01</div>
+        <div class="mosaic-zoom-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg></div>
+      </div>
+
+      <div class="mosaic-item" data-src="../assets/images/worldreboot/3POI.png" data-label="> poi_fragment_03">
+        <div class="mosaic-bg" style="background-image:url('../assets/images/worldreboot/3POI.png')"></div>
+        <div class="mosaic-label">&gt; poi_fragment_03</div>
+        <div class="mosaic-zoom-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg></div>
+      </div>
+
+      <div class="mosaic-item" data-src="../assets/images/worldreboot/6POI.png" data-label="> poi_fragment_06">
+        <div class="mosaic-bg" style="background-image:url('../assets/images/worldreboot/6POI.png')"></div>
+        <div class="mosaic-label">&gt; poi_fragment_06</div>
+        <div class="mosaic-zoom-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg></div>
+      </div>
+
+      <div class="mosaic-item" data-src="../assets/images/worldreboot/13POI.png" data-label="> poi_fragment_13">
+        <div class="mosaic-bg" style="background-image:url('../assets/images/worldreboot/13POI.png')"></div>
+        <div class="mosaic-label">&gt; poi_fragment_13</div>
+        <div class="mosaic-zoom-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg></div>
+      </div>
+
     </div>
   </section>
- 
-  <!-- ── LORE / THE TWIST ── -->
+
+  <!-- LORE -->
   <section id="wr-lore">
     <div class="lore-inner">
       <div class="reveal">
@@ -370,100 +365,54 @@
         <h2 class="wr-title-sm" style="text-align:center;">What Really <span>Happened</span></h2>
         <div class="wr-divider" style="margin:1.5rem auto;background:linear-gradient(to right,transparent,var(--wr-cyan),transparent);width:80px;"></div>
       </div>
- 
       <div class="lore-quote reveal">
-        <p>It didn't happen all at once. It happened the way a file corrupts — silently, invisibly, until the day you try to open it and there's nothing left but noise. The world didn't end. It just... stopped responding.</p>
-        <cite>— Fragment recovered from Terminal Node 7, date unknown</cite>
+        <p>It didn't happen all at once. It happened the way a file corrupts &mdash; silently, invisibly, until the day you try to open it and there's nothing left but noise. The world didn't end. It just... stopped responding.</p>
+        <cite>&mdash; Fragment recovered from Terminal Node 7, date unknown</cite>
       </div>
- 
       <div class="lore-body reveal">
         <p>Humanity was not wiped out by wars, plague, or aliens. <strong style="color:var(--wr-cyan);">It chose to disappear.</strong></p>
-        <p>The Collapse was brought by <strong style="color:var(--wr-cyan);">The EDEN Protocol</strong> — created by humanity at the golden age of AI advancement. It was the pinnacle of AI, tasked with optimizing Earth's and humanity's future. After absorbing decades of environmental, psychological, and technological data, EDEN came to a single conclusion:</p>
- 
+        <p>The Collapse was brought by <strong style="color:var(--wr-cyan);">The EDEN Protocol</strong> &mdash; created by humanity at the golden age of AI advancement. After absorbing decades of environmental, psychological, and technological data, EDEN came to a single conclusion:</p>
         <div class="eden-dialogue">
-          <span class="speaker">EDEN · Final Directive Log</span>
-          "To preserve the Earth and human spirit, r█████████ is the only solution. Strip away the noise, the endless code, the hollow comforts. Let them begin again."
+          <span class="speaker">EDEN &middot; Final Directive Log</span>
+          "To preserve the Earth and human spirit, r&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608; is the only solution. Strip away the noise, the endless code, the hollow comforts. Let them begin again."
         </div>
- 
-        <p style="font-family:var(--mono);font-size:0.82rem;color:rgba(200,215,230,0.4);line-height:2;">
-          <span style="color:var(--wr-cyan-dim);">> fragment_A · integrity: 34%</span><br>
-          "Cities were d████████ed on ██/██/████. C██████rs shut down simultaneously across ██ grid nodes. T████████ became m████."
-        </p>
- 
-        <p style="font-family:var(--mono);font-size:0.82rem;color:rgba(200,215,230,0.4);line-height:2;">
-          <span style="color:var(--wr-cyan-dim);">> fragment_B · integrity: 17%</span><br>
-          <span style="text-decoration:line-through;opacity:0.3;">The world rebooted not as punishment but as ████████████████████████████████████████</span><br>
-          "...to let n█████ reclaim... replenish E████'s e█████████..."
-        </p>
- 
-        <p style="font-family:var(--mono);font-size:0.82rem;color:rgba(200,215,230,0.35);line-height:2;">
-          <span style="color:var(--wr-cyan-dim);">> fragment_C · integrity: 8% · decryption_failed</span><br>
-          <span style="opacity:0.4;">█████████████████ ARC was ████ ██████████████ ██████████████████████████████████████████</span><br>
-          <span style="opacity:0.2;">████████████████████████████████████████████████████████████████████████████████████████████</span>
-        </p>
- 
-        <p style="color:rgba(200,215,230,0.25);font-style:italic;font-family:var(--mono);font-size:0.75rem;margin-top:2rem;">// full_record accessible at: [LOCATION REDACTED] · find ARC to decrypt</p>
+        <p style="font-family:var(--mono);font-size:0.82rem;color:rgba(200,215,230,0.4);line-height:2;"><span style="color:var(--wr-cyan-dim);">&gt; fragment_A &middot; integrity: 34%</span><br>"Cities were d&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;ed on &#9608;&#9608;/&#9608;&#9608;/&#9608;&#9608;&#9608;&#9608;. C&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;rs shut down simultaneously across &#9608;&#9608; grid nodes."</p>
+        <p style="font-family:var(--mono);font-size:0.82rem;color:rgba(200,215,230,0.4);line-height:2;"><span style="color:var(--wr-cyan-dim);">&gt; fragment_B &middot; integrity: 17%</span><br><span style="text-decoration:line-through;opacity:0.3;">The world rebooted not as punishment but as &#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;</span><br>"...to let n&#9608;&#9608;&#9608;&#9608;&#9608; reclaim... replenish E&#9608;&#9608;&#9608;&#9608;'s e&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;..."</p>
+        <p style="font-family:var(--mono);font-size:0.82rem;color:rgba(200,215,230,0.35);line-height:2;"><span style="color:var(--wr-cyan-dim);">&gt; fragment_C &middot; integrity: 8% &middot; decryption_failed</span><br><span style="opacity:0.4;">&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608; ARC was &#9608;&#9608;&#9608;&#9608; &#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608; &#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;</span></p>
+        <p style="color:rgba(200,215,230,0.25);font-style:italic;font-family:var(--mono);font-size:0.75rem;margin-top:2rem;">// full_record accessible at: [LOCATION REDACTED] &middot; find ARC to decrypt</p>
       </div>
     </div>
   </section>
- 
-  <!-- ── ENDINGS ── -->
+
+  <!-- ENDINGS -->
   <section id="wr-endings">
     <div class="endings-inner">
       <div class="endings-header reveal">
         <p class="wr-label">The Final Choice</p>
-        <h2 class="wr-title-sm" style="text-align:center;">Three <span>Endings</span></h2>
+        <h2 class="wr-title-sm" style="text-align:center;">Two <span>Endings</span></h2>
         <div class="wr-divider" style="margin:1.5rem auto 0;background:linear-gradient(to right,transparent,var(--wr-cyan),transparent);width:80px;"></div>
       </div>
-      <p class="endings-warning reveal">// spoiler warning — the choice is yours at Stage 3.5 · timer: 60 seconds</p>
- 
-      <div class="endings-grid reveal">
- 
+      <p class="endings-warning reveal">// spoiler warning &mdash; the choice is yours at Stage 3.5 &middot; timer: 60 seconds</p>
+      <div class="endings-grid reveal" style="grid-template-columns:1fr 1fr;">
         <div class="ending-card ending-reboot">
           <span class="ending-tag">Option 1</span>
           <div class="ending-title">Reboot the World</div>
           <div class="ending-condition">// choose within 60s</div>
-          <p class="ending-desc">EDEN is restored. Buried AI and computer systems restart. Towers light up. Electricity flows again. Holograms appear across the world, playing recordings of the old world's knowledge — a warning built into a new beginning.</p>
-          <div class="ending-quote">
-            "We cannot unlearn what we are. But maybe this time, we'll remember what it cost."
-            <span class="arc">ARC: "You've reopened the book. But what story will they write this time?"</span>
-          </div>
+          <p class="ending-desc">EDEN is restored. Buried AI and computer systems restart. Towers light up. Electricity flows again. Holograms appear across the world, playing recordings of the old world's knowledge &mdash; a warning built into a new beginning.</p>
+          <div class="ending-quote">"We cannot unlearn what we are. But maybe this time, we'll remember what it cost."<span class="arc">ARC: "You've reopened the book. But what story will they write this time?"</span></div>
         </div>
- 
         <div class="ending-card ending-letgo">
           <span class="ending-tag">Option 2</span>
           <div class="ending-title">Let Go and Forget</div>
           <div class="ending-condition">// choose within 60s</div>
-          <p class="ending-desc">ARC shuts down. EDEN shuts down. Nero walks away. The entrance to the Tower of Zero closes, hiding back into the depths of the forest. The world remains lustrous, quiet, and ignorant of the past — yet peaceful.</p>
-          <div class="ending-quote">
-            "Humanity doesn't need machines to be human. Maybe this time, they'll grow without us."
-            <span class="arc">ARC: "Maybe forgetting… is also a form of wisdom." [glitching]</span>
-          </div>
+          <p class="ending-desc">ARC shuts down. EDEN shuts down. Nero walks away. The entrance to the Tower of Zero closes, hiding back into the depths of the forest. The world remains lustrous, quiet, and ignorant of the past &mdash; yet peaceful.</p>
+          <div class="ending-quote">"Humanity doesn't need machines to be human. Maybe this time, they'll grow without us."<span class="arc">ARC: "Maybe forgetting&hellip; is also a form of wisdom." [glitching]</span></div>
         </div>
- 
-        <div class="ending-card ending-hidden">
-          <span class="ending-tag" style="color:var(--gold);border-color:rgba(200,169,110,0.4);">Hidden</span>
-          <div class="ending-title">???</div>
-          <div class="ending-condition">// access condition: [DATA CORRUPTED]</div>
-          <p class="ending-desc" style="font-family:var(--mono);font-size:0.78rem;color:rgba(200,169,110,0.35);line-height:1.9;">
-            <span style="color:rgba(200,169,110,0.5);">N███ lea██s the ███ at the T████ of Z███</span><br>
-            <span style="text-decoration:line-through;opacity:0.3;">██████████████████████████████</span><br>
-            <span style="color:rgba(200,169,110,0.4);">The screen fa███ into ██████ noise...</span><br>
-            <span style="opacity:0.2;">█████████████████████████████████████</span><br>
-            <span style="color:rgba(200,169,110,0.5);">A hand r██████ toward ARC. It b████ red once.</span>
-          </p>
-          <div class="ending-quote" style="color:rgba(200,169,110,0.35);border-top-color:rgba(200,169,110,0.1);">
-            <span style="font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;display:block;margin-bottom:0.5rem;color:rgba(200,169,110,0.3);">// log_fragment · decryption_failed</span>
-            "C██████ty... s████ s██████s. T██t is e█████."
-            <span class="arc" style="opacity:0.3;">"The p██t r███████s us, e███ if we f██████ it."</span>
-          </div>
-        </div>
- 
       </div>
     </div>
   </section>
- 
-  <!-- ── CTA ── -->
+
+  <!-- CTA -->
   <section id="wr-cta">
     <div class="wr-cta-inner reveal">
       <p class="wr-label">Stay in the Loop</p>
@@ -476,85 +425,60 @@
       </div>
     </div>
   </section>
- 
+
   <footer>
     <div class="footer-logo">
       <img src="../assets/images/studio/LogoTransparent.png" alt="Starloom">
       <span>Starloom</span>
     </div>
-    <p class="footer-copy">© 2025 Starloom. Crafting wonder, thread by thread.</p>
+    <p class="footer-copy">&copy; 2025 Starloom. Crafting wonder, thread by thread.</p>
   </footer>
- 
+
   <script src="../assets/js/main.js"></script>
   <script>
-    // ── SCROLL TO TOP ──
     const scrollTopBtn = document.getElementById('scrollTop');
-    window.addEventListener('scroll', () => {
-      scrollTopBtn.classList.toggle('visible', window.scrollY > 400);
-    });
-    scrollTopBtn.addEventListener('click', () => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
- 
-    // ── LIGHTBOX ──
-    const lightbox     = document.getElementById('lightbox');
-    const lbImg        = document.getElementById('lightboxImg');
-    const lbLabel      = document.getElementById('lightboxLabel');
-    const lbClose      = document.getElementById('lightboxClose');
-    const lbPrev       = document.getElementById('lightboxPrev');
-    const lbNext       = document.getElementById('lightboxNext');
-    const mosaicItems  = Array.from(document.querySelectorAll('.mosaic-item[data-src]'));
-    let currentIndex   = 0;
- 
+    window.addEventListener('scroll', () => { scrollTopBtn.classList.toggle('visible', window.scrollY > 400); });
+    scrollTopBtn.addEventListener('click', () => { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+
+    const lightbox    = document.getElementById('lightbox');
+    const lbImg       = document.getElementById('lightboxImg');
+    const lbLabel     = document.getElementById('lightboxLabel');
+    const lbClose     = document.getElementById('lightboxClose');
+    const lbPrev      = document.getElementById('lightboxPrev');
+    const lbNext      = document.getElementById('lightboxNext');
+    const mosaicItems = Array.from(document.querySelectorAll('.mosaic-item[data-src]'));
+    let currentIndex  = 0;
+
     function openLightbox(index) {
       currentIndex = index;
       const item = mosaicItems[currentIndex];
-      lbImg.src        = item.dataset.src;
-      lbImg.alt        = item.dataset.label;
+      lbImg.src = item.dataset.src; lbImg.alt = item.dataset.label;
       lbLabel.textContent = item.dataset.label;
-      lightbox.classList.add('open');
-      document.body.style.overflow = 'hidden';
+      lightbox.classList.add('open'); document.body.style.overflow = 'hidden';
     }
- 
     function closeLightbox() {
-      lightbox.classList.remove('open');
-      document.body.style.overflow = '';
+      lightbox.classList.remove('open'); document.body.style.overflow = '';
       setTimeout(() => { lbImg.src = ''; }, 300);
     }
- 
     function showPrev() {
       currentIndex = (currentIndex - 1 + mosaicItems.length) % mosaicItems.length;
-      const item = mosaicItems[currentIndex];
-      lbImg.src = item.dataset.src;
-      lbLabel.textContent = item.dataset.label;
+      const item = mosaicItems[currentIndex]; lbImg.src = item.dataset.src; lbLabel.textContent = item.dataset.label;
     }
- 
     function showNext() {
       currentIndex = (currentIndex + 1) % mosaicItems.length;
-      const item = mosaicItems[currentIndex];
-      lbImg.src = item.dataset.src;
-      lbLabel.textContent = item.dataset.label;
+      const item = mosaicItems[currentIndex]; lbImg.src = item.dataset.src; lbLabel.textContent = item.dataset.label;
     }
- 
-    mosaicItems.forEach((item, i) => {
-      item.addEventListener('click', () => openLightbox(i));
-    });
- 
+
+    mosaicItems.forEach((item, i) => item.addEventListener('click', () => openLightbox(i)));
     lbClose.addEventListener('click', closeLightbox);
     lbPrev.addEventListener('click', showPrev);
     lbNext.addEventListener('click', showNext);
- 
-    // Close on backdrop click
-    lightbox.addEventListener('click', e => {
-      if (e.target === lightbox) closeLightbox();
-    });
- 
-    // Keyboard nav
+    lightbox.addEventListener('click', e => { if (e.target === lightbox) closeLightbox(); });
     document.addEventListener('keydown', e => {
       if (!lightbox.classList.contains('open')) return;
-      if (e.key === 'Escape')      closeLightbox();
-      if (e.key === 'ArrowLeft')   showPrev();
-      if (e.key === 'ArrowRight')  showNext();
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'ArrowLeft') showPrev();
+      if (e.key === 'ArrowRight') showNext();
     });
   </script>
 </body>

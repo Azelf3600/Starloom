@@ -54,7 +54,7 @@ nav {
 .nav-links { display: flex; gap: 2.5rem; list-style: none; }
 .nav-links a {
   font-size: 0.78rem; letter-spacing: 0.2em; text-transform: uppercase;
-  color: var(--muted); text-decoration: none;
+  color: #fff; text-decoration: none;
   transition: color 0.3s; position: relative;
 }
 .nav-links a::after {
@@ -75,20 +75,27 @@ nav {
   font-family: var(--font-body);
   font-size: 0.75rem; letter-spacing: 0.22em; text-transform: uppercase;
   text-decoration: none; padding: 0.85rem 2.2rem;
-  border: 1px solid var(--ice); color: var(--ice);
+  border: 1px solid var(--ice); color: #fff;
   background: transparent; cursor: none;
   transition: color 0.3s; position: relative; overflow: hidden;
+  display: inline-block;
+  isolation: isolate;
 }
 .btn::before {
   content: ''; position: absolute; inset: 0;
   background: var(--ice);
   transform: translateX(-101%); transition: transform 0.3s;
+  z-index: -1;
 }
+.btn:hover { color: #000; }
 .btn:hover::before { transform: translateX(0); }
-.btn:hover { color: var(--bg); }
-.btn-ghost { border-color: var(--border); color: var(--muted); }
-.btn-ghost::before { background: var(--muted); }
-.btn-ghost:hover { color: var(--bg); }
+
+/* Ghost variant */
+.btn-ghost {
+  border-color: rgba(160,210,240,0.3); color: #fff;
+}
+.btn-ghost::before { background: #fff; }
+.btn-ghost:hover { color: #000; }
 
 /* ── HERO ── */
 #hero {
@@ -144,7 +151,7 @@ nav {
 
 .hero-eyebrow {
   font-size: 0.7rem; letter-spacing: 0.45em; text-transform: uppercase;
-  color: var(--ice-dim); margin-bottom: 1rem; animation: fadeUp 1s 0.2s both;
+  color: #fff; margin-bottom: 1rem; animation: fadeUp 1s 0.2s both;
 }
 .hero-title {
   font-family: var(--font-display);
@@ -155,7 +162,7 @@ nav {
 .hero-title span { color: var(--ice); }
 .hero-tagline {
   margin-top: 1.2rem; font-size: 1rem; letter-spacing: 0.22em;
-  color: var(--muted); font-style: italic; animation: fadeUp 1s 0.6s both;
+  color: #fff; font-style: italic; animation: fadeUp 1s 0.6s both;
 }
 .hero-cta { margin-top: 3rem; display: flex; gap: 1.2rem; animation: fadeUp 1s 0.8s both; }
 
@@ -164,7 +171,7 @@ nav {
   display: flex; flex-direction: column; align-items: center; gap: 0.5rem;
   animation: fadeUp 1s 1.2s both;
 }
-.hero-scroll span { font-size: 0.65rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--muted); }
+.hero-scroll span { font-size: 0.65rem; letter-spacing: 0.3em; text-transform: uppercase; color: #fff; }
 .scroll-line {
   width: 1px; height: 50px;
   background: linear-gradient(to bottom, var(--ice-dim), transparent);
@@ -245,7 +252,7 @@ nav {
   font-weight: 900; color: #fff; margin-bottom: 0.6rem; line-height: 1.1;
 }
 .game-card-desc {
-  font-size: 0.82rem; color: rgba(200,220,230,0.65); line-height: 1.7;
+  font-size: 0.82rem; color: #fff; line-height: 1.7;
   max-width: 380px; opacity: 0; transform: translateY(10px);
   transition: opacity 0.4s 0.05s, transform 0.4s 0.05s;
 }
@@ -275,12 +282,12 @@ nav {
 }
 .studio-text p {
   font-size: 0.95rem; line-height: 1.9;
-  color: rgba(200,220,235,0.7); margin-bottom: 1.2rem;
+  color: #fff; margin-bottom: 1.2rem;
 }
 .studio-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5px; margin-top: 2rem; }
 .stat { background: var(--surface); padding: 1.5rem; border: 1px solid var(--border); }
 .stat-num { font-family: var(--font-display); font-size: 2.2rem; color: var(--ice); font-weight: 900; }
-.stat-label { font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); margin-top: 0.3rem; }
+.stat-label { font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase; color: #fff; margin-top: 0.3rem; }
 
 .studio-emblem {
   display: flex; align-items: center; justify-content: center;
@@ -335,8 +342,14 @@ nav {
   display: flex; align-items: center; justify-content: center;
   font-family: var(--font-display); font-size: 1.4rem; color: var(--ice); font-weight: 900;
 }
-.member-name { font-family: var(--font-display); font-size: 0.9rem; letter-spacing: 0.1em; color: #fff; margin-bottom: 0.4rem; }
-.member-role { font-size: 0.68rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ice-dim); }
+.member-name {
+  font-family: var(--font-display); font-size: 0.9rem;
+  letter-spacing: 0.1em; color: #fff; margin-bottom: 0.4rem;
+}
+.member-role {
+  font-size: 0.68rem; letter-spacing: 0.2em;
+  text-transform: uppercase; color: #fff; opacity: 0.7;
+}
 
 /* ── CONTACT ── */
 #contact { background: radial-gradient(ellipse at bottom, rgba(14, 17, 24, 0.6), transparent); text-align: center; position: relative; overflow: hidden; }
@@ -346,7 +359,7 @@ nav {
 }
 .contact-inner { position: relative; max-width: 600px; margin: 0 auto; }
 .contact-inner .divider { margin: 1.5rem auto; }
-.contact-inner p { font-size: 0.9rem; color: var(--muted); line-height: 1.8; margin-bottom: 2.5rem; }
+.contact-inner p { font-size: 0.9rem; color: #fff; line-height: 1.8; margin-bottom: 2.5rem; }
 .contact-links { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; }
 
 /* ── FOOTER ── */
@@ -358,5 +371,5 @@ footer {
 }
 .footer-logo { display: flex; align-items: center; gap: 0.6rem; }
 .footer-logo img { width: 24px; height: 24px; object-fit: contain; opacity: 0.7; }
-.footer-logo span { font-family: var(--font-display); font-size: 0.8rem; letter-spacing: 0.2em; color: var(--muted); }
-.footer-copy { font-size: 0.7rem; letter-spacing: 0.12em; color: var(--muted); opacity: 0.6; }
+.footer-logo span { font-family: var(--font-display); font-size: 0.8rem; letter-spacing: 0.2em; color: #fff; }
+.footer-copy { font-size: 0.7rem; letter-spacing: 0.12em; color: #fff; opacity: 0.6; }
