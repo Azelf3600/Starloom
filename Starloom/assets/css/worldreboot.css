@@ -214,7 +214,7 @@
 
 .wr-landing-hero {
   width: 100%; aspect-ratio: 16/7;
-  background: url('../images/worldreboot/ForestBackground.png') center/cover no-repeat;
+  background: url('../images/worldreboot/LandingScreen.png') center/cover no-repeat;
   position: relative;
 }
 .wr-landing-hero::after {
